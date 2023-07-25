@@ -31,12 +31,12 @@ module.exports = {
 
       colors: {
         soft: '#f0f0f0',
-        primary: '#6527BE',
+        primary: '#5c20b3',
         secondary: '#A7EDE7',
-        darker: '#1d1d23',
-        dark: '#22222b',
-        mid: '#282833',
-        light: '#b1acbf',
+        dark: '#282833',
+        darker: '#22222b',
+        darkest: '#1d1d23',
+        light: '#a49dbf',
         lighter: '#d7d3e6',
         lightest: '#ffffff',
       },

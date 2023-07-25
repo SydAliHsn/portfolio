@@ -4,6 +4,7 @@ import { Poppins } from 'next/font/google';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import SideLinks from '@/components/SideLinks';
 
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500'], subsets: ['latin'] });
 
@@ -15,8 +16,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`bg-primary ${poppins.className}`}>
+      <body className={`bg-darkest ${poppins.className}`}>
+        <SideLinks />
+
         <Navbar />
+
         {children}
 
         <Footer />

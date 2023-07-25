@@ -7,7 +7,7 @@ const NavLink = ({ children, href }: { children: React.ReactNode; href: string }
   return (
     <Link
       href={href}
-      className="text-lightest relative uppercase px-2 text-base block hover:text-primary before:bg-lightest before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0 before:w-full hover:before:h-full  before:-z-[1] z-10 transition-all before:transition-all duration-300 before:duration-300"
+      className="text-lightest relative uppercase px-2 text-base block hover:text-primary before:bg-lightest before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0 before:w-full hover:before:h-full  before:-z-[1] z-10 transition-colors before:transition-all duration-300 before:duration-300"
     >
       {children}
     </Link>
@@ -22,9 +22,7 @@ const Navbar = (props: {}): JSX.Element => {
     const handleScroll = () => {
       setNavBgActive(window.scrollY > 15);
 
-      if (mobileNavOpen) {
-        setMobileNavOpen(false);
-      }
+      if (mobileNavOpen) setMobileNavOpen(false);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -32,18 +30,21 @@ const Navbar = (props: {}): JSX.Element => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [mobileNavOpen]);
+
+  // frost glass effect bg nav
+  // bg-opacity-[0.88] backdrop-filter backdrop-saturate-120 backdrop-blur-md
 
   return (
     <header className="fixed top-0 left-0 bg-transparent w-full z-10">
       <div
-        className={`z-[5] absolute top-0 left-0 h-full bg-dark transition-width duration-[450ms] ${
+        className={`z-[5] absolute top-0 left-0 h-full bg-darkest transition-width duration-[400ms] ${
           mobileNavOpen ? 'w-full' : 'w-0'
         }`}
       ></div>
 
       <div
-        className={`z-[5] absolute top-0 right-0 h-full bg-dark transition-width duration-[450ms] ${
+        className={`z-[5] absolute top-0 right-0 h-full bg-darkest transition-width duration-[400ms] ${
           navBgActive ? 'w-full' : 'w-0'
         }`}
       ></div>
@@ -83,11 +84,11 @@ const Navbar = (props: {}): JSX.Element => {
           </li>
 
           <li>
-            <NavLink href="#about">Skills</NavLink>
+            <NavLink href="#about">Projects</NavLink>
           </li>
 
           <li>
-            <NavLink href="#about">Projects</NavLink>
+            <NavLink href="#about">Testimonials</NavLink>
           </li>
 
           <li>
@@ -96,7 +97,7 @@ const Navbar = (props: {}): JSX.Element => {
         </ul>
 
         <div
-          className={`bg-dark md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-[450ms] p-5 space-y-7 ${
+          className={`bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-[400ms] p-5 space-y-7 ${
             mobileNavOpen ? 'left-0' : 'left-full'
           }`}
         >
