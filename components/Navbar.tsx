@@ -20,11 +20,7 @@ const Navbar = (props: {}): JSX.Element => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 35) {
-        setNavBgActive(true);
-      } else {
-        setNavBgActive(false);
-      }
+      setNavBgActive(window.scrollY > 15);
 
       if (mobileNavOpen) {
         setMobileNavOpen(false);

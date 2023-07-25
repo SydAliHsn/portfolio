@@ -15,7 +15,7 @@ export default function Home() {
           Syed <span className="whitespace-nowrap">Ali Hassan</span>
         </h1>
 
-        <h2 className="text-3xl md:text-4xl text-light font-semibold py-3 md:py-5">
+        <h2 className="text-3xl md:text-4xl text-light font-semibold py-3 md:py-4">
           <ReactTypingEffect
             typingDelay={200}
             speed={30}
