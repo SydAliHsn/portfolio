@@ -14,7 +14,7 @@ const About = (props: {}): JSX.Element => {
           <h2 className="text-4xl font-extrabold">About</h2>
 
           <h4 className="text-2xl">
-            I’m Ali, a passionate and creative individual who thrives on self-learning and exploring new ideas.
+            I&apos;m Ali, a passionate and creative individual who thrives on self-learning and exploring new ideas.
           </h4>
 
           <p className="text-lighter text-lg">
