@@ -25,6 +25,10 @@ const Navbar = (props: {}): JSX.Element => {
       } else {
         setNavBgActive(false);
       }
+
+      if (mobileNavOpen) {
+        setMobileNavOpen(false);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
