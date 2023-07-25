@@ -24,7 +24,7 @@ const About = (props: {}): JSX.Element => {
           </p>
 
           <p className="text-lighter text-lg">
-            I'm constantly seeking ways to expand my knowledge and push the boundaries of my understanding. I find
+            I&apos;m constantly seeking ways to expand my knowledge and push the boundaries of my understanding. I find
             immense joy in the process of acquiring new skills and discovering innovative concepts.
           </p>
 
