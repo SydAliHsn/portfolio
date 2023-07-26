@@ -49,16 +49,17 @@ const Navbar = (props: {}): JSX.Element => {
         }`}
       ></div>
 
-      <nav className="container mx-auto flex items-center justify-between w-full py-2 md:py-5 px-2 md:px-6 text-lg">
+      <nav className="container mx-auto flex items-center justify-between w-full py-5 px-3 md:px-6 text-lg">
         <Link
           href={'/'}
-          className={'text-lightest uppercase text-4xl z-10 p-1 md:p-0 font-medium'}
+          className={'text-lightest uppercase text-4xl z-10 font-medium'}
         >
           {'{Ali}'}
         </Link>
 
         <button
-          className="md:hidden hamburger-menu-icon z-10 flex flex-col space-y-[0.55rem] justify-center items-center p-4"
+          className="md:hidden hamburger-menu-icon z-10 flex flex-col space-y-[0.55rem] justify-center items-center 
+          mr-2"
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
         >
           <div
