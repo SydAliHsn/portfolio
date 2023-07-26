@@ -97,37 +97,45 @@ const Navbar = (props: {}): JSX.Element => {
           </li>
         </ul>
 
-        <div
+        <ul
           className={`bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-[400ms] p-5 space-y-7 ${
             mobileNavOpen ? 'left-0' : 'left-full'
           }`}
         >
-          <Link
-            href={'/about'}
-            className="text-lightest block"
-          >
-            About
-          </Link>
-          <Link
-            href={'/about'}
-            className="text-lightest block"
-          >
-            Projects
-          </Link>
-          <Link
-            href={'/about'}
-            className="text-lightest block"
-          >
-            Contact
-          </Link>
+          <li>
+            <Link
+              href={'/about'}
+              className="text-lightest block"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={'/about'}
+              className="text-lightest block"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={'/about'}
+              className="text-lightest block"
+            >
+              Contact
+            </Link>
+          </li>
 
-          <Link
-            href={'/about'}
-            className="text-lightest block"
-          >
-            Testimonials
-          </Link>
-        </div>
+          <li>
+            <Link
+              href={'/about'}
+              className="text-lightest block"
+            >
+              Testimonials
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
