@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-import IoChatbubbleOutline from 'react-icons/io';
+import { HiOutlineChatBubbleOvalLeft } from 'react-icons/hi2';
+import { FaRegAddressCard } from 'react-icons/fa';
 
 const About = (props: {}): JSX.Element => {
   return (
@@ -9,8 +10,8 @@ const About = (props: {}): JSX.Element => {
       className="section mt-24 text-lightest"
       id="projects"
     >
-      <div className="container mx-auto grid gap-20 px-4 sm:px-4 md:px-20 lg:px-[7.5rem]">
-        <div className="p-8 bg-dark rounded-[3rem] md:w-2/3 space-y-5">
+      <div className="container mx-auto grid lg:grid-cols-[7fr,4fr] gap-4 xl:gap-6 px-4 sm:px-4 md:px-20 lg:px-[7.5rem] xl:px-40">
+        <div className="p-6 sm:p-8 bg-dark rounded-[3rem] space-y-5">
           <h2 className="text-4xl font-extrabold">About</h2>
 
           <h4 className="text-2xl">
@@ -45,21 +46,29 @@ const About = (props: {}): JSX.Element => {
             </ul>
           </div>
 
-          <div className="flex !mt-[4.5rem] gap-4">
+          <div className="flex flex-col xs:flex-row !mt-[4.5rem] gap-4">
             <Link
               href={'/'}
-              className="bg-primary rounded-full py-[0.6rem] px-7 text-lg"
+              className="flex items-center justify-center gap-2 bg-primary rounded-full py-[0.6rem] px-7 text-lg"
             >
               Contact
+              <HiOutlineChatBubbleOvalLeft className="font-medium text-2xl" />
             </Link>
 
             <Link
-              href={'/'}
-              className="border-2 border-primary text-lighter rounded-full py-[0.6rem] px-7 text-lg"
+              href={'/resume'}
+              className="flex items-center justify-center gap-2 border-2 border-light text-secondary rounded-full py-[0.6rem] px-7 text-lg font-medium"
             >
+              <FaRegAddressCard />
               Resume
             </Link>
           </div>
+        </div>
+
+        <div className="grid grid-cols-3 lg:grid-cols-none lg:grid-rows-3 gap-2 lg:gap-4">
+          <div className="p-4 sm:p-8 bg-dark rounded-[3rem] text-xl text-center">Passionate</div>
+          <div className="p-4 sm:p-8 bg-dark rounded-[3rem] text-xl text-center">Passionate</div>
+          <div className="p-4 sm:p-8 bg-dark rounded-[3rem] text-xl text-center">Passionate</div>
         </div>
       </div>
     </section>
