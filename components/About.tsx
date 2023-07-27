@@ -49,7 +49,7 @@ const About = (props: {}): JSX.Element => {
           <div className="flex flex-col xs:flex-row !mt-[4.5rem] gap-4">
             <Link
               href={'/'}
-              className="flex items-center justify-center gap-2 bg-primary rounded-full py-[0.6rem] px-7 text-lg"
+              className="flex items-center justify-center gap-2 bg-primary-light hover:bg-primary transition-all rounded-4xl py-[0.6rem] px-7 text-lg"
             >
               Contact
               <HiOutlineChatBubbleOvalLeft className="font-medium text-2xl" />
@@ -57,7 +57,7 @@ const About = (props: {}): JSX.Element => {
 
             <Link
               href={'/resume'}
-              className="flex items-center justify-center gap-2 border-2 border-light text-secondary rounded-full py-[0.6rem] px-7 text-lg font-medium"
+              className="flex items-center justify-center gap-2 border-2 border-light text-secondary hover:text-secondary-dark transtion-all rounded-4xl py-[0.6rem] px-7 text-lg font-medium"
             >
               <FaRegAddressCard />
               Resume

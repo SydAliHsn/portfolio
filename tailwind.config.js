@@ -43,12 +43,16 @@ module.exports = {
       },
 
       colors: {
-        soft: '#f0f0f0',
+        'primary-light': '#6c2fc4',
         primary: '#5c20b3',
+
         secondary: '#A7EDE7',
+        'secondary-dark': '#76d6ce',
+
         dark: '#282833',
         darker: '#22222b',
         darkest: '#1d1d23',
+
         light: '#a49dbf',
         lighter: '#d7d3e6',
         lightest: '#ffffff',

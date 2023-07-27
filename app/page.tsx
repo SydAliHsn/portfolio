@@ -26,7 +26,7 @@ export default function Home() {
             />
           </h2>
           <p className="text-xl text-lighter font-normal py-1">I like building and breaking things on the Internet!</p>
-          <button className="bg-secondary text-primary text-xl font-bold px-6 py-3 mt-7">
+          <button className="bg-secondary-dark hover:rounded-4xl transition-all duration-300 text-primary text-xl font-medium px-6 py-3 mt-7">
             <Link href="/">About Me</Link>
           </button>
         </div>
