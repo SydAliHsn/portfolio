@@ -27,6 +27,10 @@ module.exports = {
         // 'sm-max': { max: '639px' },
       },
 
+      borderRadius: {
+        '4xl': '2rem',
+      },
+
       // Makes the container "fluid" when screen is smaller than 768px
       container: {
         screens: {

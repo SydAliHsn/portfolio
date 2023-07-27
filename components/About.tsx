@@ -11,7 +11,7 @@ const About = (props: {}): JSX.Element => {
       id="projects"
     >
       <div className="container mx-auto grid lg:grid-cols-[7fr,4fr] gap-4 xl:gap-6 px-4 sm:px-4 md:px-20 lg:px-[7.5rem] xl:px-40">
-        <div className="p-6 sm:p-8 bg-dark rounded-[3rem] space-y-5">
+        <div className="p-6 sm:p-8 bg-dark rounded-4xl space-y-5">
           <h2 className="text-4xl font-extrabold">About</h2>
 
           <h4 className="text-2xl">
@@ -66,9 +66,9 @@ const About = (props: {}): JSX.Element => {
         </div>
 
         <div className="grid grid-cols-3 lg:grid-cols-none lg:grid-rows-3 gap-2 lg:gap-4">
-          <div className="p-4 sm:p-8 bg-dark rounded-[3rem] text-xl text-center">Passionate</div>
-          <div className="p-4 sm:p-8 bg-dark rounded-[3rem] text-xl text-center">Passionate</div>
-          <div className="p-4 sm:p-8 bg-dark rounded-[3rem] text-xl text-center">Passionate</div>
+          <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Passionate</div>
+          <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Passionate</div>
+          <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Passionate</div>
         </div>
       </div>
     </section>
