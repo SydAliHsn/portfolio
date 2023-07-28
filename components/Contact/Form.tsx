@@ -12,13 +12,13 @@ const Form = (props: {}): JSX.Element => {
     >
       <div className="flex flex-col md:flex-row gap-5">
         <input
-          className="block w-full py-7 px-8 rounded-3xl bg-dark placeholder:text-light text-lightest text-lg border-2 border-light focus:outline-none focus:border-secondary-dark transition-all duration-[400ms]"
+          className="block w-full p-7 rounded-3xl bg-dark placeholder:text-light text-lightest text-lg border-2 border-light focus:outline-none focus:border-secondary-dark transition-all duration-[400ms]"
           type="text"
           name="name"
           placeholder="Name"
         />
         <input
-          className="block w-full py-7 px-8 rounded-3xl bg-dark placeholder:text-light text-lightest text-lg border-2 border-light focus:outline-none focus:border-secondary-dark transition-all duration-[400ms]"
+          className="block w-full p-7 rounded-3xl bg-dark placeholder:text-light text-lightest text-lg border-2 border-light focus:outline-none focus:border-secondary-dark transition-all duration-[400ms]"
           type="email"
           name="email"
           placeholder="Email"
@@ -29,7 +29,7 @@ const Form = (props: {}): JSX.Element => {
         <textarea
           name="message"
           placeholder="Message"
-          className="block w-full py-7 px-8 rounded-3xl bg-dark placeholder:text-light text-lightest text-lg border-2 border-light focus:outline-none focus:border-secondary-dark transition-all duration-[400ms] col-span-2 h-72"
+          className="block w-full p-7 rounded-3xl bg-dark placeholder:text-light text-lightest text-lg border-2 border-light focus:outline-none focus:border-secondary-dark transition-all duration-[400ms] col-span-2 h-72"
         ></textarea>
 
         <div className="absolute bottom-0 right-0 bg-darkest border-t-2 border-l-2 border-light rounded-tl-3xl p-4">

@@ -41,6 +41,7 @@ const About = (props: {}): JSX.Element => {
               <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">SQL</li>
               <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Git</li>
               <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Python</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">PHP</li>
               <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Java</li>
               <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Linux</li>
             </ul>
