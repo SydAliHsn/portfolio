@@ -14,11 +14,11 @@ const About = (props: {}): JSX.Element => {
         <div className="p-6 sm:p-8 bg-dark rounded-4xl space-y-5">
           <h2 className="text-3xl sm:text-4xl font-extrabold">About</h2>
 
-          <h4 className="text-2xl">
+          <h4 className="text-xl md:text-2xl">
             I&apos;m Ali, a passionate and creative individual who thrives on self-learning and exploring new ideas.
           </h4>
 
-          <p className="text-lighter text-lg">
+          <p className="text-lighter md:text-lg">
             My passion for self-learning, creativity, and exploration drives me to constantly seek out new experiences
             and push the boundaries of my own potential. I am excited to embark on new adventures, collaborate with
             like-minded individuals, and contribute my unique perspectives and talents to the world around me.
@@ -32,21 +32,21 @@ const About = (props: {}): JSX.Element => {
           <div>
             <h5 className="text-xl pt-2">Tools & Technologies</h5>
             <ul className="flex flex-wrap mt-4 gap-[0.6rem]">
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">Javascript</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">Typescript</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">React</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">NextJS</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">Tailwind CSS</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">SASS / SCSS</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">SQL</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">Git</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">Python</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">Java</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-sm">Linux</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Javascript</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Typescript</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">React</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">NextJS</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">SASS</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">TailwindCSS</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">SQL</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Git</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Python</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Java</li>
+              <li className="border-2 px-2 py-1 rounded-2xl border-light text-lighter text-sm">Linux</li>
             </ul>
           </div>
 
-          <div className="flex flex-col xs:flex-row !mt-[4.5rem] gap-4">
+          <div className="flex flex-col xs:flex-row gap-4 !mt-10 md:!mt-16">
             <Link
               href={'/'}
               className="flex items-center justify-center gap-2 bg-primary-light hover:bg-primary transition-all rounded-4xl py-[0.6rem] duration-300 px-7 text-lg"
