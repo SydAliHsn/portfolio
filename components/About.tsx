@@ -10,9 +10,9 @@ const About = (props: {}): JSX.Element => {
       className="section mt-24 text-lightest"
       id="projects"
     >
-      <div className="container mx-auto grid lg:grid-cols-[7fr,4fr] gap-4 xl:gap-6 px-4 sm:px-4 md:px-20 lg:px-[7.5rem] xl:px-40">
+      <div className="container mx-auto grid lg:grid-cols-[7fr,4fr] gap-4 xl:gap-6 px-2 sm:px-4 md:px-20 lg:px-[7.5rem] xl:px-40">
         <div className="p-6 sm:p-8 bg-dark rounded-4xl space-y-5">
-          <h2 className="text-4xl font-extrabold">About</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold">About</h2>
 
           <h4 className="text-2xl">
             I&apos;m Ali, a passionate and creative individual who thrives on self-learning and exploring new ideas.
@@ -67,8 +67,8 @@ const About = (props: {}): JSX.Element => {
 
         <div className="grid grid-cols-3 lg:grid-cols-none lg:grid-rows-3 gap-2 lg:gap-4">
           <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Passionate</div>
-          <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Passionate</div>
-          <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Passionate</div>
+          <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Lively</div>
+          <div className="p-4 sm:p-8 bg-dark rounded-4xl text-xl text-center">Life</div>
         </div>
       </div>
     </section>
