@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SideLinks from '@/components/SideLinks';
 
-const poppins = Poppins({ weight: ['100', '200', '300', '400', '500'], subsets: ['latin'] });
+const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Syed Ali Hassan | Fullstack Developer',

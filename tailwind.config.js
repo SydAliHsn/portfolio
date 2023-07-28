@@ -28,7 +28,7 @@ module.exports = {
       },
 
       borderRadius: {
-        '4xl': '2rem',
+        '4xl': '2.25rem',
       },
 
       // Makes the container "fluid" when screen is smaller than 768px

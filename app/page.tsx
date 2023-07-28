@@ -6,6 +6,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 import About from '@/components/About';
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
             />
           </h2>
           <p className="text-xl text-lighter font-normal py-1">I like building and breaking things on the Internet!</p>
-          <button className="bg-secondary-dark hover:rounded-4xl transition-all duration-300 text-primary text-xl font-medium px-6 py-3 mt-7">
+          <button className="bg-secondary hover:rounded-4xl hover:bg-secondary-dark transition-all duration-300 text-primary text-xl font-medium px-6 py-3 mt-7">
             <Link href="/">About Me</Link>
           </button>
         </div>
@@ -35,6 +36,8 @@ export default function Home() {
       <Projects />
 
       <About />
+
+      <Contact />
     </>
   );
 }
