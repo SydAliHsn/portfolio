@@ -18,28 +18,28 @@ const Contact = (props: {}): JSX.Element => {
           <div className="pt-8 flex flex-wrap items-center gap-3">
             <Link
               href={'https://github.com/SydAliHsn'}
-              className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary hover:text-secondary-dark transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff15]"
+              className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-light hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff15]"
             >
               <BiLogoGithub />
             </Link>
 
             <Link
               href={'/resume'}
-              className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary hover:text-secondary-dark transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff15]"
+              className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-light hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff15]"
             >
               <BiLogoLinkedin />
             </Link>
 
             <Link
               href={'/resume'}
-              className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary hover:text-secondary-dark transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff15]"
+              className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-light hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff15]"
             >
               <BiLogoTwitter />
             </Link>
 
             <Link
               href={'mailto:ali@syyed.me'}
-              className="text-lg flex items-center justify-center gap-2 border-2 border-light text-secondary hover:text-secondary-dark transtion-all rounded-full duration-300 p-2 sm:p-0 font-medium hover:bg-[#a7f5ff15]"
+              className="text-lg flex items-center justify-center gap-2 border-2 border-light text-secondary-light hover:text-secondary transtion-all rounded-full duration-300 p-2 sm:p-0 font-medium hover:bg-[#a7f5ff15]"
             >
               <HiMail className="sm:hidden text-3xl" />
 

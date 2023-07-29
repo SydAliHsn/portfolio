@@ -11,7 +11,7 @@ import Contact from '@/components/Contact';
 export default function Home() {
   return (
     <>
-      <main className="mx-auto h-screen flex items-center bg-primary section">
+      <main className="mx-auto h-screen flex items-centersection bg-angled">
         <div className="container flex flex-col items-start justify-center flex-grow mx-auto px-4 sm:px-4 md:px-20 lg:px-[7.5rem]">
           <span className="text-secondary text-2xl font-medium">Hello! 👋 My name is</span>
           <h1 className="text-5xl md:text-7xl font-bold text-lightest py-1 md:pr-8 !leading-[1.1]">
@@ -27,7 +27,7 @@ export default function Home() {
             />
           </h2>
           <p className="text-xl text-lighter font-normal py-1">I like building and breaking things on the Internet!</p>
-          <button className="bg-secondary hover:rounded-4xl hover:bg-secondary-dark transition-all duration-300 text-primary text-xl font-medium px-6 py-3 mt-7">
+          <button className="bg-secondary-light hover:rounded-4xl hover:bg-secondary transition-all duration-300 text-primary text-xl font-medium px-6 py-3 mt-7">
             <Link href="/">About Me</Link>
           </button>
         </div>

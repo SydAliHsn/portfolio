@@ -38,13 +38,13 @@ const Navbar = (props: {}): JSX.Element => {
   return (
     <header className="fixed top-0 left-0 bg-transparent w-full z-10">
       <div
-        className={`z-[5] absolute top-0 left-0 h-full bg-darkest transition-width duration-[400ms] ${
+        className={`z-[5] absolute top-0 left-0 h-full bg-darkest transition-width duration-300 ${
           mobileNavOpen ? 'w-full' : 'w-0'
         }`}
       ></div>
 
       <div
-        className={`z-[5] absolute top-0 right-0 h-full bg-darkest transition-width duration-[400ms] ${
+        className={`z-[5] absolute top-0 right-0 h-full bg-darkest transition-width duration-300 ${
           navBgActive ? 'w-full' : 'w-0'
         }`}
       ></div>
@@ -98,7 +98,7 @@ const Navbar = (props: {}): JSX.Element => {
         </ul>
 
         <ul
-          className={`bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-[400ms] p-5 space-y-7 ${
+          className={`bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${
             mobileNavOpen ? 'left-0' : 'left-full'
           }`}
         >

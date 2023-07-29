@@ -5,3 +5,8 @@
 *:focus {
   outline: 2px dotted skyblue;
 }
+
+.bg-angled {
+  /* background: linear-gradient(to right bottom, #6222bf 50%, #a7ede7 50.1%); */
+  background: linear-gradient(to right bottom, #013a6b 50%, #004e95 50.1%);
+}

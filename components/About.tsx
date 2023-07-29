@@ -58,7 +58,7 @@ const About = (props: {}): JSX.Element => {
 
             <Link
               href={'/resume'}
-              className="flex items-center justify-center gap-2 border-2 border-light text-secondary hover:text-secondary-dark transtion-all rounded-4xl duration-300 py-[0.6rem] px-7 text-lg font-medium hover:bg-[#a7f5ff15]"
+              className="flex items-center justify-center gap-2 border-2 border-light text-secondary-light hover:text-secondary transtion-all rounded-4xl duration-300 py-[0.6rem] px-7 text-lg font-medium hover:bg-[#a7f5ff15]"
             >
               <FaRegAddressCard />
               Resume

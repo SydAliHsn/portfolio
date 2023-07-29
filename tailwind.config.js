@@ -44,11 +44,11 @@ module.exports = {
       },
 
       colors: {
-        'primary-light': '#6c2fc4',
-        primary: '#6222bf',
+        'primary-light': '#004e95',
+        primary: '#013a6b',
 
-        secondary: '#A7EDE7',
-        'secondary-dark': '#76d6ce',
+        secondary: '#76d6ce',
+        'secondary-light': '#A7EDE7',
 
         dark: '#282833',
         darker: '#22222b',
