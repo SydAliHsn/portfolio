@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
     return null;
   }
   return (
-    <div className="fixed bottom-5 right-5 md:bottom-8 md:right-8">
+    <div className="fixed z-50 bottom-5 right-5 md:bottom-8 md:right-8">
       <button
         onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         className={`rounded-full p-1 sm:p-3 ${resolvedTheme === 'dark' ? 'bg-lightest' : 'bg-darkest'}`}

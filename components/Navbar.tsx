@@ -63,17 +63,17 @@ const Navbar = (props: {}): JSX.Element => {
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
         >
           <div
-            className={`w-9 h-[0.2rem] bg-lightest transition-all duration-300 ${
+            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${
               mobileNavOpen && 'rotate-45 translate-y-3'
             }`}
           ></div>
           <div
-            className={`w-9 h-[0.2rem] bg-lightest mb-[0.55rem] transition-all duration-300 ${
+            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest mb-[0.55rem] transition-all duration-300 ${
               mobileNavOpen && 'opacity-0'
             }`}
           ></div>
           <div
-            className={`w-9 h-[0.2rem] bg-lightest transition-all duration-300 ${
+            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${
               mobileNavOpen && '-rotate-45 -translate-y-3'
             }`}
           ></div>
@@ -98,7 +98,7 @@ const Navbar = (props: {}): JSX.Element => {
         </ul>
 
         <ul
-          className={`bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${
+          className={`z-10 bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${
             mobileNavOpen ? 'left-0' : 'left-full'
           }`}
         >
