@@ -6,7 +6,18 @@
   outline: 2px dotted skyblue;
 }
 
+body {
+  background-color: theme('colors.lighter');
+}
+
+.dark body {
+  background-color: theme('colors.darkest');
+}
+
 .bg-angled {
-  /* background: linear-gradient(to right bottom, #6222bf 50%, #a7ede7 50.1%); */
-  background: linear-gradient(to right bottom, #013a6b 50%, #004e95 50.1%);
+  background: linear-gradient(to right bottom, theme('colors.secondary-light') 50%, theme('colors.secondary') 50.1%);
+}
+
+.dark .bg-angled {
+  background: linear-gradient(to right bottom, theme('colors.primary') 50%, theme('colors.primary-light') 50.1%);
 }

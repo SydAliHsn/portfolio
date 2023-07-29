@@ -7,7 +7,7 @@ const NavLink = ({ children, href }: { children: React.ReactNode; href: string }
   return (
     <Link
       href={href}
-      className="text-lightest relative uppercase px-2 text-base block hover:text-primary before:bg-lightest before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0 before:w-full hover:before:h-full  before:-z-[1] z-10 transition-colors before:transition-all duration-300 before:duration-300"
+      className="text-dark dark:text-lightest relative uppercase px-2 text-base block hover:text-lightest dark:hover:text-primary before:bg-primary-light dark:before:bg-lightest font-medium dark:font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0 before:w-full hover:before:h-full  before:-z-[1] z-10 transition-colors before:transition-all duration-300 before:duration-300"
     >
       {children}
     </Link>
@@ -38,13 +38,13 @@ const Navbar = (props: {}): JSX.Element => {
   return (
     <header className="fixed top-0 left-0 bg-transparent w-full z-10">
       <div
-        className={`z-[5] absolute top-0 left-0 h-full bg-darkest transition-width duration-300 ${
+        className={`z-[5] absolute top-0 left-0 h-full shadow-lg shadow-light/10 bg-lightest dark:bg-darkest transition-width duration-300 ${
           mobileNavOpen ? 'w-full' : 'w-0'
         }`}
       ></div>
 
       <div
-        className={`z-[5] absolute top-0 right-0 h-full bg-darkest transition-width duration-300 ${
+        className={`z-[5] absolute top-0 right-0 h-full shadow-lg shadow-light/10 bg-lightest dark:bg-darkest transition-width duration-300 ${
           navBgActive ? 'w-full' : 'w-0'
         }`}
       ></div>
@@ -52,7 +52,7 @@ const Navbar = (props: {}): JSX.Element => {
       <nav className="container mx-auto flex items-center justify-between w-full py-5 px-3 md:px-6 text-lg">
         <Link
           href={'/'}
-          className={'text-lightest uppercase text-4xl z-10 font-medium'}
+          className={'text-dark dark:text-lightest uppercase text-4xl z-10 font-medium'}
         >
           {'{Ali}'}
         </Link>
@@ -98,14 +98,14 @@ const Navbar = (props: {}): JSX.Element => {
         </ul>
 
         <ul
-          className={`bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${
+          className={`bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${
             mobileNavOpen ? 'left-0' : 'left-full'
           }`}
         >
           <li>
             <Link
               href={'/about'}
-              className="text-lightest block"
+              className="text-dark dark:text-lightest block"
             >
               About
             </Link>
@@ -113,7 +113,7 @@ const Navbar = (props: {}): JSX.Element => {
           <li>
             <Link
               href={'/about'}
-              className="text-lightest block"
+              className="text-dark dark:text-lightest block"
             >
               Projects
             </Link>
@@ -121,7 +121,7 @@ const Navbar = (props: {}): JSX.Element => {
           <li>
             <Link
               href={'/about'}
-              className="text-lightest block"
+              className="text-dark dark:text-lightest block"
             >
               Contact
             </Link>
@@ -130,7 +130,7 @@ const Navbar = (props: {}): JSX.Element => {
           <li>
             <Link
               href={'/about'}
-              className="text-lightest block"
+              className="text-dark dark:text-lightest block"
             >
               Testimonials
             </Link>

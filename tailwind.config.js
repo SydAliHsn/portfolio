@@ -8,6 +8,9 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
+  darkMode: 'class',
+
   theme: {
     screens: {
       xs: '390px',
@@ -47,6 +50,7 @@ module.exports = {
         'primary-light': '#004e95',
         primary: '#013a6b',
 
+        'secondary-dark': '#52c7f7',
         secondary: '#76d6ce',
         'secondary-light': '#A7EDE7',
 
@@ -54,9 +58,9 @@ module.exports = {
         darker: '#22222b',
         darkest: '#1d1d23',
 
-        light: '#a49dbf',
-        lighter: '#d7d3e6',
-        lightest: '#ffffff',
+        light: '#a1afc2',
+        lighter: '#f2fafc',
+        lightest: '#FFFFFF',
       },
 
       transitionProperty: {

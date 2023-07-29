@@ -2,9 +2,11 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 
+import Provider from './provider';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SideLinks from '@/components/SideLinks';
+import ThemeSwitch from '@/components/ThemeSwitch';
 
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800'], subsets: ['latin'] });
 
@@ -16,14 +18,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`bg-darkest ${poppins.className}`}>
-        <SideLinks />
+      <body className={`${poppins.className}`}>
+        <Provider>
+          <ThemeSwitch />
 
-        <Navbar />
+          <SideLinks />
 
-        {children}
+          <Navbar />
 
-        <Footer />
+          {children}
+
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
