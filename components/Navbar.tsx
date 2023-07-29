@@ -52,7 +52,7 @@ const Navbar = (props: {}): JSX.Element => {
       <nav className="container mx-auto flex items-center justify-between w-full py-5 px-3 md:px-6 text-lg">
         <Link
           href={'/'}
-          className={'text-dark dark:text-lightest uppercase text-4xl z-10 font-medium'}
+          className={'text-dark dark:text-lightest uppercase text-4xl z-10 font-semibold dark:font-medium'}
         >
           {'{Ali}'}
         </Link>

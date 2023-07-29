@@ -9,9 +9,9 @@ const Contact = (props: {}): JSX.Element => {
     <section id="contact">
       <div className="container mx-auto px-2 sm:px-4 md:px-20 lg:px-[7.5rem] xl:px-40 space-y-6  mt-20">
         <div className="p-6 sm:p-8 bg-lightest dark:bg-dark rounded-4xl space-y-5 shadow-md shadow-light/10 dark:shadow-none">
-          <h2 className="text-3xl sm:text-4xl text-darker font-bold">Let&apos;s Connect</h2>
+          <h2 className="text-3xl sm:text-4xl text-darker dark:text-lightest font-bold">Let&apos;s Connect</h2>
 
-          <p className="text-xl lg:text-2xl text-dark">
+          <p className="text-xl lg:text-2xl text-dark dark:text-lighter">
             I would love to hear from you and discuss any potential opportunities or collaborations.
           </p>
 
