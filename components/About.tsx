@@ -57,10 +57,10 @@ const About = (props: {}): JSX.Element => {
             </ul>
           </div>
 
-          <div className="flex flex-col xs:flex-row gap-4 !mt-10 md:!mt-16">
+          <div className="flex flex-wrap justify-center sm:justify-start gap-2 xs:gap-4 !mt-10 md:!mt-16">
             <Link
               href={'/'}
-              className="flex items-center justify-center gap-2 text-lightest bg-primary-light hover:bg-primary transition-all rounded-4xl py-[0.6rem] duration-300 px-7 text-lg"
+              className="flex items-center justify-center gap-2 text-lightest bg-primary-light hover:bg-primary transition-all rounded-4xl py-2 sm:py-[0.6rem] px-6 sm:px-7 duration-300 sm:text-lg flex-grow xs:flex-grow-0"
             >
               Contact
               <HiOutlineChatBubbleOvalLeft className="font-medium text-2xl" />
@@ -68,7 +68,7 @@ const About = (props: {}): JSX.Element => {
 
             <Link
               href={'/resume'}
-              className="flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-4xl duration-300 py-[0.6rem] px-7 text-lg font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15]"
+              className="flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-4xl duration-300 py-2 sm:py-[0.6rem] px-6 sm:px-7 sm:text-lg font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15] flex-grow xs:flex-grow-0"
             >
               <FaRegAddressCard />
               Resume
