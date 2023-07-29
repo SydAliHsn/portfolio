@@ -32,7 +32,7 @@ const Form = (props: {}): JSX.Element => {
           className="block w-full p-7 rounded-3xl bg-lightest dark:bg-dark shadow-md shadow-light/10 dark:shadow-none placeholder:text-light dark:placeholder-light text-lightest text-lg border-2 border-light focus:outline-none focus:border-secondary-dark dark:focus:border-secondary transition-all duration-[400ms] col-span-2 h-72"
         ></textarea>
 
-        <div className="absolute bottom-0 right-0 bg-lightest dark:bg-darkest border-t-2 border-l-2 border-light rounded-tl-3xl p-3 md:p-4">
+        <div className="absolute bottom-0 right-0 bg-lighter dark:bg-darkest border-t-2 border-l-2 border-light rounded-tl-3xl p-3 md:p-4">
           <button
             type="submit"
             className="flex items-center justify-center gap-2 bg-primary-light hover:bg-primary transition-all rounded-3xl py-2 md:py-[0.7rem] px-6 md:px-7 duration-300 text-lg text-lightest"
