@@ -29,7 +29,7 @@ export default function Home() {
           <p className="text-xl text-dark dark:text-lighter font-normal py-1">
             I like building and breaking things on the Internet!
           </p>
-          <button className="bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light text-xl font-medium px-6 py-3 mt-7">
+          <button className="bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7">
             <Link href="/">About Me</Link>
           </button>
         </div>

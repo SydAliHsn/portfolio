@@ -38,13 +38,13 @@ const Navbar = (props: {}): JSX.Element => {
   return (
     <header className="fixed top-0 left-0 bg-transparent w-full z-10">
       <div
-        className={`z-[5] absolute top-0 left-0 h-full shadow-lg shadow-light/10 bg-lightest dark:bg-darkest transition-width duration-300 ${
+        className={`z-[5] absolute top-0 left-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${
           mobileNavOpen ? 'w-full' : 'w-0'
         }`}
       ></div>
 
       <div
-        className={`z-[5] absolute top-0 right-0 h-full shadow-lg shadow-light/10 bg-lightest dark:bg-darkest transition-width duration-300 ${
+        className={`z-[5] absolute top-0 right-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${
           navBgActive ? 'w-full' : 'w-0'
         }`}
       ></div>
