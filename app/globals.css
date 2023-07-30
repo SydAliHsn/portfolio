@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 *:focus {
+  outline: 2px dotted theme('colors.primary-light');
+}
+
+.dark *:focus {
   outline: 2px dotted skyblue;
 }
 
