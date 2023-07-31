@@ -40,18 +40,16 @@ const Navbar = (props: {}): JSX.Element => {
   return (
     <header className="fixed top-0 left-0 bg-transparent w-full z-10">
       <div
-        className={`z-[5] absolute top-0 left-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${
-          mobileNavOpen ? 'w-full' : 'w-0'
-        }`}
+        className={`z-[5] absolute top-0 left-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${mobileNavOpen ? 'w-full' : 'w-0'
+          }`}
       ></div>
 
       <div
-        className={`z-[5] absolute top-0 right-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${
-          navBgActive ? 'w-full' : 'w-0'
-        }`}
+        className={`z-[5] absolute top-0 right-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${navBgActive ? 'w-full' : 'w-0'
+          }`}
       ></div>
 
-      <nav className="container mx-auto flex items-center justify-between w-full py-5 px-3 md:px-6 text-lg">
+      <nav className="container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg">
         <Link
           href={'/'}
           className={'text-dark dark:text-lightest uppercase text-4xl z-10 font-semibold dark:font-medium'}
@@ -65,19 +63,16 @@ const Navbar = (props: {}): JSX.Element => {
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
         >
           <div
-            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${
-              mobileNavOpen && 'rotate-45 translate-y-3'
-            }`}
+            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${mobileNavOpen && 'rotate-45 translate-y-3'
+              }`}
           ></div>
           <div
-            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest mb-[0.55rem] transition-all duration-300 ${
-              mobileNavOpen && 'opacity-0'
-            }`}
+            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest mb-[0.55rem] transition-all duration-300 ${mobileNavOpen && 'opacity-0'
+              }`}
           ></div>
           <div
-            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${
-              mobileNavOpen && '-rotate-45 -translate-y-3'
-            }`}
+            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${mobileNavOpen && '-rotate-45 -translate-y-3'
+              }`}
           ></div>
         </button>
 
@@ -100,9 +95,8 @@ const Navbar = (props: {}): JSX.Element => {
         </ul>
 
         <ul
-          className={`z-10 bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${
-            mobileNavOpen ? 'left-0' : 'left-full'
-          }`}
+          className={`z-10 bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${mobileNavOpen ? 'left-0' : 'left-full'
+            }`}
         >
           <li>
             <Link
