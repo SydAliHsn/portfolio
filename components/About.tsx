@@ -9,6 +9,10 @@ import Creative from './svg/Creative';
 import SelfTaught from './svg/SelfTaught';
 
 const About = (props: {}): JSX.Element => {
+  const skills = [
+    'Javascript', 'Typescript', 'React', 'NextJS', 'NodeJS', 'Express', 'SASS', 'TailwindCSS', 'SQL', 'Git', 'Python', 'PHP', 'Linux', 'Java',
+  ]
+
   return (
     <section
       className="section mt-24 text-darker dark:text-lightest"
@@ -34,31 +38,16 @@ const About = (props: {}): JSX.Element => {
             immense joy in the process of acquiring new skills and discovering innovative concepts.
           </p>
 
-          <div>
-            <h5 className="text-xl pt-2">Tools & Technologies</h5>
+
+
+          <div className='mt-2 xl:mt-8'>
+            <h5 className="text-xl">Tools & Technologies</h5>
             <ul className="flex flex-wrap mt-4 gap-[0.6rem]">
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
-                Javascript
-              </li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
-                Typescript
-              </li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">React</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
-                NextJS
-              </li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">SASS</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
-                TailwindCSS
-              </li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">SQL</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">Git</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
-                Python
-              </li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">PHP</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">Java</li>
-              <li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">Linux</li>
+
+              {skills.map(skill => (<li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
+                {skill}
+              </li>))}
+
             </ul>
           </div>
 
