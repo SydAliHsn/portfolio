@@ -78,16 +78,18 @@ const About = (props: {}): JSX.Element => {
 
           </div>
 
+
+
+          <div className="h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2">
+            <p className="xs:text-lg md:text-2xl font-medium text-center">Creative</p>
+            <Creative />
+          </div>
+
           <div className="h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2">
             <p className="xs:text-lg md:text-2xl text-center">Self-Learner</p>
 
             <SelfTaught />
 
-          </div>
-
-          <div className="h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2">
-            <p className="xs:text-lg md:text-2xl font-medium text-center">Creative</p>
-            <Creative />
           </div>
         </div>
       </div>
