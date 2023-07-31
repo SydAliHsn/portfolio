@@ -1,8 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 import { HiOutlineChatBubbleOvalLeft } from 'react-icons/hi2';
 import { FaRegAddressCard } from 'react-icons/fa';
+
+import Productive from './svg/Productive';
+import Creative from './svg/Creative';
+import SelfTaught from './svg/SelfTaught';
 
 const About = (props: {}): JSX.Element => {
   return (
@@ -10,8 +14,9 @@ const About = (props: {}): JSX.Element => {
       className="section mt-24 text-darker dark:text-lightest"
       id="projects"
     >
-      <div className="container mx-auto grid lg:grid-cols-[7fr,4fr] gap-4 xl:gap-6 px-2 sm:px-4 md:px-20 lg:px-[7.5rem] xl:px-40">
-        <div className="p-6 sm:p-8 bg-lightest shadow-md shadow-light/10 dark:shadow-none dark:bg-dark rounded-4xl space-y-5">
+      <div className="container mx-auto flex flex-col md:flex-row gap-4 px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl">
+
+        <div className="p-6 md:p-6 lg:p-8 bg-lightest shadow-md shadow-light/10 dark:shadow-none dark:bg-dark rounded-4xl flex flex-col gap-5 md:w-2/3">
           <h2 className="text-3xl sm:text-4xl font-extrabold">About</h2>
 
           <h4 className="text-xl md:text-2xl">
@@ -57,7 +62,7 @@ const About = (props: {}): JSX.Element => {
             </ul>
           </div>
 
-          <div className="flex flex-wrap justify-center sm:justify-start gap-2 xs:gap-4 !mt-10 md:!mt-16">
+          <div className="flex flex-wrap justify-center xs:justify-start gap-2 xs:gap-4 mt-8 lg:mt-14">
             <Link
               href={'/'}
               className="flex items-center justify-center gap-2 text-lightest bg-primary-light hover:bg-primary transition-all rounded-4xl py-2 sm:py-[0.6rem] px-6 sm:px-7 duration-300 sm:text-lg flex-grow xs:flex-grow-0"
@@ -76,15 +81,24 @@ const About = (props: {}): JSX.Element => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 lg:grid-cols-none lg:grid-rows-3 gap-2 lg:gap-4">
-          <div className="p-4 sm:p-8 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl text-xl text-center">
-            Passionate
+        <div className="grid grid-cols-3 md:grid-cols-none md:grid-rows-3 gap-2 md:gap-4 md:max-h-[58.5rem] xl:max-h-[51rem] md:w-1/3">
+          <div className="h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2">
+            <p className="xs:text-lg md:text-2xl font-medium text-center">Productive</p>
+
+            <Productive />
+
           </div>
-          <div className="p-4 sm:p-8 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl text-xl text-center">
-            Lively
+
+          <div className="h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2">
+            <p className="xs:text-lg md:text-2xl text-center">Self-Learner</p>
+
+            <SelfTaught />
+
           </div>
-          <div className="p-4 sm:p-8 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl text-xl text-center">
-            Life
+
+          <div className="h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-none bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2">
+            <p className="xs:text-lg md:text-2xl font-medium text-center">Creative</p>
+            <Creative />
           </div>
         </div>
       </div>
