@@ -44,7 +44,7 @@ const About = (props: {}): JSX.Element => {
             <h5 className="text-xl">Tools & Technologies</h5>
             <ul className="flex flex-wrap mt-4 gap-[0.6rem]">
 
-              {skills.map(skill => (<li className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
+              {skills.map(skill => (<li key={skill} className="border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter text-sm">
                 {skill}
               </li>))}
 
