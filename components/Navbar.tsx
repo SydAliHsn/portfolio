@@ -37,16 +37,18 @@ const Navbar = (props: {}): JSX.Element => {
   // frost glass effect bg nav
   // bg-opacity-[0.88] backdrop-filter backdrop-saturate-120 backdrop-blur-md
 
+  const navBgCommonClasses = 'z-[5] absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300'
+
+
+
   return (
     <header className="fixed top-0 left-0 bg-transparent w-full z-10">
       <div
-        className={`z-[5] absolute top-0 left-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${mobileNavOpen ? 'w-full' : 'w-0'
-          }`}
+        className={`left-0 ${navBgCommonClasses} ${mobileNavOpen ? 'w-full' : 'w-0'}`}
       ></div>
 
       <div
-        className={`z-[5] absolute top-0 right-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300 ${navBgActive ? 'w-full' : 'w-0'
-          }`}
+        className={`right-0 ${navBgCommonClasses} ${navBgActive ? 'w-full' : 'w-0'}`}
       ></div>
 
       <nav className="container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg">
@@ -82,15 +84,15 @@ const Navbar = (props: {}): JSX.Element => {
           </li>
 
           <li>
-            <NavLink href="#about">Projects</NavLink>
+            <NavLink href="#projects">Projects</NavLink>
           </li>
 
           <li>
-            <NavLink href="#about">Testimonials</NavLink>
+            <NavLink href="#testimonials">Testimonials</NavLink>
           </li>
 
           <li>
-            <NavLink href="#about">Contact</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
           </li>
         </ul>
 
@@ -100,7 +102,7 @@ const Navbar = (props: {}): JSX.Element => {
         >
           <li>
             <Link
-              href={'/about'}
+              href='#about'
               className="text-dark dark:text-lightest block"
             >
               About
@@ -108,7 +110,7 @@ const Navbar = (props: {}): JSX.Element => {
           </li>
           <li>
             <Link
-              href={'/about'}
+              href='#projects'
               className="text-dark dark:text-lightest block"
             >
               Projects
@@ -116,7 +118,7 @@ const Navbar = (props: {}): JSX.Element => {
           </li>
           <li>
             <Link
-              href={'/about'}
+              href='#contact'
               className="text-dark dark:text-lightest block"
             >
               Contact
@@ -125,7 +127,7 @@ const Navbar = (props: {}): JSX.Element => {
 
           <li>
             <Link
-              href={'/about'}
+              href='#testimonials'
               className="text-dark dark:text-lightest block"
             >
               Testimonials

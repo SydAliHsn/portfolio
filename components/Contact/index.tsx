@@ -6,8 +6,8 @@ import Form from './Form';
 
 const Contact = (props: {}): JSX.Element => {
   return (
-    <section id="contact">
-      <div className="container mx-auto px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl space-y-6 mt-20">
+    <section id="contact" className='pt-20'>
+      <div className="container mx-auto px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl space-y-6">
         <div className="p-6 sm:p-8 bg-lightest dark:bg-dark rounded-4xl space-y-5 shadow-md shadow-light/10 dark:shadow-none">
           <h2 className="text-3xl sm:text-4xl text-darker dark:text-lightest font-bold">Let&apos;s Connect</h2>
 
