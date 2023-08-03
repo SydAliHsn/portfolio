@@ -5,7 +5,7 @@ import Link from 'next/link';
 import ReactTypingEffect from 'react-typing-effect';
 
 import About from '@/components/About';
-import Projects from '@/components/Projects';
+// import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </main>
 
-      <Projects />
+      {/* <Projects /> */}
 
       <About />
 
