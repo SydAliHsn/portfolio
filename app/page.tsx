@@ -5,7 +5,7 @@ import Link from 'next/link';
 import ReactTypingEffect from 'react-typing-effect';
 
 import About from '@/components/About';
-// import Projects from '@/components/Projects';
+import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
             I like building and breaking things on the Internet!
           </p>
           <button className="bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7">
-            <Link href="/">About Me</Link>
+            <Link href="#about">About Me</Link>
           </button>
         </div>
       </main>
