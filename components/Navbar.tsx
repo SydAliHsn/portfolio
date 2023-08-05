@@ -100,39 +100,18 @@ const Navbar = (props: {}): JSX.Element => {
           className={`z-10 bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${mobileNavOpen ? 'left-0' : 'left-full'
             }`}
         >
-          <li>
-            <Link
-              href='#about'
-              className="text-dark dark:text-lightest block"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href='#projects'
-              className="text-dark dark:text-lightest block"
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              href='#contact'
-              className="text-dark dark:text-lightest block"
-            >
-              Contact
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href='#testimonials'
-              className="text-dark dark:text-lightest block"
-            >
-              Testimonials
-            </Link>
-          </li>
+          {['about', 'projects', 'contact', 'testimonials'].map(el => (
+            <li>
+              <Link
+                href={`#${el}`}
+                className="text-dark dark:text-lightest block"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                {el[0].toUpperCase() + el.slice(1)}
+              </Link>
+            </li>
+          ))
+          }
         </ul>
       </nav>
     </header>
