@@ -102,8 +102,8 @@ const Navbar = (props: {}): JSX.Element => {
           className={`z-10 bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${mobileNavOpen ? 'left-0' : 'left-full'
             }`}
         >
-          {['about', 'projects', 'contact', 'testimonials'].map(el => (
-            <li>
+          {['about', 'projects', 'contact', 'testimonials'].map((el, i) => (
+            <li key={i}>
               <Link
                 href={`#${el}`}
                 className="text-dark dark:text-lightest block"
