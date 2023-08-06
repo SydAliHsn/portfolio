@@ -132,7 +132,6 @@ const Navbar = (props: {}): JSX.Element => {
           </li>
         </ul>
 
-
       </nav>
     </header>
   );
