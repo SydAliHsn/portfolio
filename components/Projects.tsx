@@ -7,7 +7,7 @@ import SecondaryButton from './SecondaryButton';
 import PrimaryButton from './PrimaryButton';
 
 const Project = ({ technologies, title, content, img, repoName, url, reverse }: { technologies: string[], title: string, content: string, img: string, repoName: string, url: string, reverse?: boolean }): JSX.Element => {
-  return <div className={`bg-lightest dark:bg-dark md:!bg-transparent relative p-4 sm:p-6 md:p-0 rounded-3xl flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 shadow-md shadow-light/10 md:shadow-none`}>
+  return <div className={`bg-lightest dark:bg-dark md:!bg-transparent relative p-4 sm:p-6 md:p-0 rounded-3xl flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 shadow-md shadow-light/10 dark:shadow-black/10 md:shadow-none`}>
 
     {/* Image Container */}
     <Link href='https://todo.syyed.me' target='_blank' className='md:w-[65%] h-full aspect-[14/10] rounded-3xl overflow-hidden relative shadow-project'>
@@ -22,7 +22,7 @@ const Project = ({ technologies, title, content, img, repoName, url, reverse }: 
       <h3 className='text-2xl pb-3 lg:pb-5 font-semibold dark:text-lighter'>{title}</h3>
 
       <p className='text-sm lg:text-base bg-lightest dark:bg-dark rounded-3xl md:p-6 dark:text-light
-  md:shadow-md shadow-light/10 dark:shadow-dark/10'>{content}</p>
+  md:shadow-md shadow-light/10 dark:shadow-black/10 dark:shadow-black/10/10'>{content}</p>
 
       {/* Technology bubbles */}
       <ul className={`flex flex-wrap mt-4 gap-[0.6rem] ${!reverse && 'md:justify-end'}`}>

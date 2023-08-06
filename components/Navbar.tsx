@@ -39,7 +39,7 @@ const Navbar = (props: {}): JSX.Element => {
   // frost glass effect bg nav
   // bg-opacity-[0.88] backdrop-filter backdrop-saturate-120 backdrop-blur-md
 
-  const navBgCommonClasses = 'z-[5] absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300'
+  const navBgCommonClasses = 'z-[5] absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-black/10 dark:shadow-none bg-lightest dark:bg-darkest transition-width duration-300'
 
 
 

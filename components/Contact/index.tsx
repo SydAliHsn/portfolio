@@ -8,7 +8,7 @@ const Contact = (props: {}): JSX.Element => {
   return (
     <section id="contact" className='pt-24'>
       <div className="container mx-auto px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl space-y-6">
-        <div className="p-6 sm:p-8 bg-lightest dark:bg-dark rounded-4xl space-y-5 shadow-md shadow-light/10">
+        <div className="p-6 sm:p-8 bg-lightest dark:bg-dark rounded-4xl space-y-5 shadow-md shadow-light/10 dark:shadow-black/10">
           <h2 className="text-3xl sm:text-4xl text-darker dark:text-lightest font-bold">Let&apos;s Connect</h2>
 
           <p className="text-xl lg:text-2xl text-dark dark:text-lighter">
