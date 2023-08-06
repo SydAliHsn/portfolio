@@ -123,7 +123,8 @@ const Navbar = (props: {}): JSX.Element => {
               { icon: <BiLogoTwitter />, link: 'https://twitter.com/SydAliHsn' },
               { icon: <BiLogoInstagram />, link: 'https://instagram.com/SydAliHsn' },
 
-            ].map(({ icon }) => (<Link
+            ].map(({ icon }, i) => (<Link
+              key={i}
               href={'https://github.com/SydAliHsn'}
               className="text-[1.2rem] border-[3px] border-gray-600 dark:border-light hover:border-darkest dark:hover:border-secondary-light rounded-full p-[4px] text-gray-600 dark:text-light hover:text-darkest dark:hover:text-secondary-light transition-all duration-300 ease-in-out hover:-translate-y-1"
             >
