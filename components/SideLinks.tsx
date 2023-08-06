@@ -4,7 +4,7 @@ import { BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiLogoInstagram } from 're
 
 const SideLinks = (props: {}): JSX.Element => {
   return (
-    <aside className="fixed bottom-0 z-30 w-full hidden md:block">
+    <aside className="fixed bottom-0 z-5 w-full hidden md:block">
       <div className="container relative mx-auto">
         <div className="absolute bottom-0 left-3 lg:left-8 flex flex-col items-center space-y-4">
 
