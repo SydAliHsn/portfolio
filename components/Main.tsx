@@ -36,11 +36,11 @@ const Main = (props: {}): JSX.Element => {
                 .to(".intro", {
                     delay: 0.2,
                     opacity: 1,
-                    duration: 0.5
+                    duration: 0
                 })
                 .to(".about-button", {
                     scale: 1,
-                    duration: 0.35,
+                    duration: 0,
                 })
         }, container);
 

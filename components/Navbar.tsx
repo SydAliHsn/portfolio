@@ -33,7 +33,7 @@ const Navbar = (props: {}): JSX.Element => {
       gsap.timeline().to(".nav", {
         opacity: 1,
         transform: 'translateY(0)',
-        delay: 4,
+        delay: 3.2,
         duration: 0.3,
       })
         .to(".nav-link", {

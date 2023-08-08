@@ -16,7 +16,7 @@ const SideLinks = (props: {}): JSX.Element => {
         opacity: 1,
         duration: 0.5,
         transform: 'translateY(0)',
-        delay: 5
+        delay: 4
       }).to(".social-link", {
         opacity: 1,
         duration: 0.3,
