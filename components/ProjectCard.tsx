@@ -17,6 +17,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         gsap.registerPlugin(ScrollTrigger);
 
         let ctx = gsap.context(() => {
+
             gsap.from(".fadeIn", {
                 scale: 0.85,
                 y: 70,
@@ -26,9 +27,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
                     trigger: container.current,
                     start: "top 65%",
                 },
-                stagger: {
-                    amount: 1,
-                },
+                stagger: 0.3,
             })
         }, container);
 
@@ -40,7 +39,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         className={`bg-lightest dark:bg-dark md:!bg-transparent relative p-4 sm:p-6 md:p-0 rounded-3xl flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 shadow-md shadow-light/10 dark:shadow-black/10 md:shadow-none`}>
 
         {/* Image Container */}
-        <Link href='https://todo.syyed.me' target='_blank' className='md:w-[65%] h-full aspect-[14/10] rounded-3xl overflow-hidden relative shadow-project'>
+        <Link href='https://todo.syyed.me' target='_blank' className='fadeIn md:w-[65%] h-full aspect-[14/10] rounded-3xl overflow-hidden relative shadow-project'>
             <Image fill src={img} alt="my project" />
         </Link>
         {/* End of Image Container */}
