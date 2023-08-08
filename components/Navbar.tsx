@@ -39,6 +39,7 @@ const Navbar = (props: {}): JSX.Element => {
         .to(".nav-link", {
           opacity: 1,
           duration: 0.3,
+          zIndex: 10,
           transform: 'translateY(0)',
           stagger: 0.1
         })
@@ -48,10 +49,10 @@ const Navbar = (props: {}): JSX.Element => {
     return () => ctx.revert()
   }, [])
 
-  const navBgCommonClasses = 'z-[5] absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-darkest transition-width duration-300'
+  const navBgCommonClasses = 'absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-darkest transition-width duration-300'
 
   return (
-    <header ref={container} className="fixed top-0 left-0 bg-transparent w-full z-10">
+    <header ref={container} className="z-50 fixed top-0 left-0 bg-transparent w-full">
       <div
         className={`left-0 ${navBgCommonClasses} ${mobileNavOpen ? 'w-full' : 'w-0'}`}
       ></div>
