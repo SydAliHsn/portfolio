@@ -4,6 +4,7 @@ import React from 'react';
 
 import ProjectCard from './ProjectCard';
 import bejeweled from '../public/projects/bejeweled.jpg';
+import devjobs from '../public/projects/devjobs.png';
 
 
 const Projects = (props: {}): JSX.Element => {
@@ -29,6 +30,17 @@ const Projects = (props: {}): JSX.Element => {
           img={bejeweled}
           url='https://bejeweledbybt.com'
           content='A minimal and user-friendly online store for a small jewelry business using Next JS. The website elegantly showcases their unique handcrafted pieces, offering customers a seamless shopping experience that balances style and functionality'
+        />
+
+        <ProjectCard
+          technologies={['React.JS', 'SASS', 'Express', 'MongoDB']}
+          repoName='dev-jobs'
+          reverse
+          badge='Practice Project'
+          title='Devjobs Job Board'
+          img={devjobs}
+          url='https://cute-cyan-brown-bear-cuff.cyclic.app/'
+          content='A simple job listing board made with React and styled with SASS/SCSS. The website fetches data from an Express backend using MongoDB and displays it in a clean and minimalistic UI.'
         />
       </div>
     </div>

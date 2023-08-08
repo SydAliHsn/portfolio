@@ -54,7 +54,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
 
             {/* Technology bubbles */}
             <ul className={`flex flex-wrap mt-4 gap-[0.6rem] ${!reverse && 'md:justify-end'}`}>
-                {technologies.map(tech => (<li key={tech} className="bg-lighter dark:bg-darkest !bg-opacity-70 border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter md:text-sm text-xs">
+                {technologies.map(tech => (<li key={tech} className="md:bg-lighter md:dark:bg-darkest !bg-opacity-70 border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter md:text-sm text-xs">
                     {tech}
                 </li>))}
             </ul>
