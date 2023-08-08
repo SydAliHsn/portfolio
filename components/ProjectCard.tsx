@@ -19,7 +19,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         let ctx = gsap.context(() => {
             gsap.from(".fadeIn", {
                 scale: 0.85,
-                y: 70,
+                y: 50,
                 opacity: 0,
                 duration: 0.6,
                 scrollTrigger: {
@@ -38,7 +38,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         className={`bg-lightest dark:bg-dark md:!bg-transparent relative p-4 sm:p-6 md:p-0 rounded-3xl flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 shadow-md shadow-light/10 dark:shadow-black/10 md:shadow-none`}>
 
         {/* Image Container */}
-        <Link href='https://todo.syyed.me' target='_blank' className='fadeIn md:w-[65%] rounded-3xl overflow-hidden relative shadow-project'>
+        <Link href='https://todo.syyed.me' target='_blank' className='fadeIn md:w-[65%] md:rounded-3xl rounded-2xl overflow-hidden relative shadow-project'>
             <Image src={img} alt={title} className='hover:scale-105 transition-transform duration-300 h-full' style={{ maxWidth: '100%', }} />
         </Link>
         {/* End of Image Container */}
