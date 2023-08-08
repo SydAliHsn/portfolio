@@ -64,7 +64,7 @@ const Navbar = (props: {}): JSX.Element => {
       <nav className={`nav ${!navBgActive && 'opacity-0 -translate-y-full'} container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg`}>
         <Link
           href={'/'}
-          className={'text-dark dark:text-lightest uppercase text-4xl z-10 font-semibold dark:font-medium'}
+          className={'text-dark dark:text-lightest uppercase text-3xl sm:text-4xl z-10 font-semibold dark:font-medium'}
         >
           {'{Ali}'}
         </Link>
@@ -75,16 +75,13 @@ const Navbar = (props: {}): JSX.Element => {
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
         >
           <div
-            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${mobileNavOpen && 'rotate-45 translate-y-3'
-              }`}
+            className={`w-9 h-[3px] bg-dark dark:bg-lightest transition-all duration-200 ${mobileNavOpen && 'rotate-45 translate-y-3'}`}
           ></div>
           <div
-            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest mb-[0.55rem] transition-all duration-300 ${mobileNavOpen && 'opacity-0'
-              }`}
+            className={`w-9 h-[3px] bg-dark dark:bg-lightest mb-[0.55rem] transition-all duration-200 ${mobileNavOpen && 'opacity-0'}`}
           ></div>
           <div
-            className={`w-9 h-[0.2rem] bg-dark dark:bg-lightest transition-all duration-300 ${mobileNavOpen && '-rotate-45 -translate-y-3'
-              }`}
+            className={`w-9 h-[3px] bg-dark dark:bg-lightest transition-all duration-200 ${mobileNavOpen && '-rotate-45 -translate-y-3'}`}
           ></div>
         </button>
 

@@ -48,7 +48,7 @@ const Main = (props: {}): JSX.Element => {
         return () => ctx.revert();
     }, []);
 
-    return <main className="mx-auto h-screen flex items-centersection bg-angled">
+    return <main className="mx-auto min-h-screen flex items-centersection bg-angled">
         <div ref={container} className="container flex flex-col items-start justify-center flex-grow mx-auto px-4 sm:px-4 md:px-20 lg:px-[7.5rem]">
 
             <h4 className="text-primary-light dark:text-secondary text-2xl font-medium">
@@ -74,7 +74,7 @@ const Main = (props: {}): JSX.Element => {
             <p className="intro opacity-0 text-xl text-dark dark:text-lighter font-normal py-1">
                 I like building and breaking things on the Internet!
             </p>
-            <button className="about-button scale-0 bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7">
+            <button className="about-button scale-0 bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md">
                 <Link href="#about">About Me</Link>
             </button>
         </div>
