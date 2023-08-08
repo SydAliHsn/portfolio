@@ -4,7 +4,7 @@ import { BiLogoGithub, BiLogoInstagram, BiLogoLinkedin, BiLogoTwitter } from 're
 
 const Footer = (props: {}): JSX.Element => {
   return (
-    <footer className="text-light flex flex-col gap-5 items-center mt-16 pb-3">
+    <footer className="text-light flex flex-col gap-4 items-center mt-16 pb-3">
       <div className="flex justify-center gap-4 md:hidden text-3xl">
         <Link
           href={'https://github.com/SydAliHsn'}
