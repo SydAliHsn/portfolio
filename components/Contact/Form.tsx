@@ -1,4 +1,3 @@
-'use client'
 
 import React, { useState } from 'react';
 
@@ -12,7 +11,7 @@ const Form = (props: {}): JSX.Element => {
 
   const [messageBoxActive, setMessageBoxActive] = useState<boolean>(false);
 
-  const inputCommonClasses = 'fadeIn block w-full p-7 rounded-3xl bg-lightest dark:bg-dark placeholder-text-light dark:placeholder-light text-dark dark:text-lightest text-lg border-2 border-light !outline-none focus:border-secondary-dark dark:focus:border-primary-light transition-border duration-300';
+  const inputCommonClasses = 'w-full block p-7 rounded-3xl bg-lightest dark:bg-dark placeholder-text-light dark:placeholder-light text-dark dark:text-lightest text-lg border-2 border-light !outline-none focus:border-secondary-dark dark:focus:border-primary-light transition-border duration-300';
 
   const sendMessage = async () => {
     setMessageStatus('sending');
@@ -52,32 +51,35 @@ const Form = (props: {}): JSX.Element => {
       className="space-y-5"
     >
       <div className="flex flex-col md:flex-row gap-5">
-        <input
-          className={inputCommonClasses}
-          type="text"
-          name="name"
-          required
-          placeholder="Name"
-          value={contactData.name}
-          onChange={e => setContactData({ ...contactData, name: e.target.value })}
-        />
+        <div className='w-full fadeIn'>
+          <input
+            className={inputCommonClasses}
+            type="text"
+            name="name"
+            required
+            placeholder="Name"
+            value={contactData.name}
+            onChange={e => setContactData({ ...contactData, name: e.target.value })}
+          /></div>
 
-        <input
-          className={inputCommonClasses}
-          type="email"
-          name="email"
-          required
-          placeholder="Email"
-          value={contactData.email}
-          onChange={e => setContactData({ ...contactData, email: e.target.value })}
-        />
+        <div className='w-full fadeIn'>
+          <input
+            className={inputCommonClasses}
+            type="email"
+            name="email"
+            required
+            placeholder="Email"
+            value={contactData.email}
+            onChange={e => setContactData({ ...contactData, email: e.target.value })}
+          />
+        </div>
       </div>
 
-      <div className="relative">
+      <div className="relative fadeIn">
         <textarea
           onFocus={() => setMessageBoxActive(true)}
           onBlur={() => setMessageBoxActive(false)}
-          name="message"
+          // name="message"
           required
           placeholder="Message"
           className={`${inputCommonClasses} col-span-2 h-72`}

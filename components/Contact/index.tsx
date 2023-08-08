@@ -14,14 +14,11 @@ const Contact = (props: {}): JSX.Element => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
     let ctx = gsap.context(() => {
-      gsap.fromTo(".fadeIn", {
-        scale: 0.8,
+      gsap.from(".fadeIn", {
+        scale: 0.85,
         opacity: 0,
-      }, {
-        scale: 1,
-        opacity: 1,
-        ease: "power1.easeIn",
         duration: 0.6,
         scrollTrigger: {
           trigger: container.current,
@@ -34,7 +31,7 @@ const Contact = (props: {}): JSX.Element => {
     }, container);
 
     return () => ctx.revert();
-  }, []);
+  }, [container]);
 
   return (
     <section id="contact" className='pt-24'>

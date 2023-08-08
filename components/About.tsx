@@ -24,13 +24,10 @@ const About = (props: {}): JSX.Element => {
     gsap.registerPlugin(ScrollTrigger);
 
     let ctx = gsap.context(() => {
-      gsap.fromTo(".fadeIn", {
-        scale: 0.8,
+      gsap.from(".fadeIn", {
+        scale: 0.85,
+        y: 70,
         opacity: 0,
-      }, {
-        scale: 1,
-        opacity: 1,
-        ease: "power1.easeIn",
         duration: 0.6,
         scrollTrigger: {
           trigger: container.current,
@@ -45,7 +42,7 @@ const About = (props: {}): JSX.Element => {
     return () => {
       ctx.revert();
     }
-  }, []);
+  }, [container]);
 
   const cardCommonClasses = 'fadeIn h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2'
 
