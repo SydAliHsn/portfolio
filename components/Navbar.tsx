@@ -1,24 +1,16 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
+import { gsap } from 'gsap';
 import { BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiLogoInstagram } from 'react-icons/bi';
 
-
-const NavLink = ({ children, href }: { children: React.ReactNode; href: string }): JSX.Element => {
-  return (
-    <Link
-      href={href}
-      className="text-dark dark:text-lightest relative uppercase px-2 text-base block hover:text-lightest dark:hover:text-primary before:bg-primary-light dark:before:bg-lightest font-medium dark:font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0 before:w-full hover:before:h-full  before:-z-[1] z-10 transition-colors before:transition-all duration-300 before:duration-300"
-    >
-      {children}
-    </Link>
-  );
-};
 
 const Navbar = (props: {}): JSX.Element => {
   const [navBgActive, setNavBgActive] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const container = useRef(null);
 
   useEffect(() => {
     setNavBgActive(window.scrollY > 15);
@@ -36,13 +28,30 @@ const Navbar = (props: {}): JSX.Element => {
     };
   }, [mobileNavOpen]);
 
-  // frost glass effect bg nav
-  // bg-opacity-[0.88] backdrop-filter backdrop-saturate-120 backdrop-blur-md
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.timeline().to(".nav", {
+        opacity: 1,
+        transform: 'translateY(0)',
+        delay: 4,
+        duration: 0.3,
+      })
+        .to(".nav-link", {
+          opacity: 1,
+          duration: 0.3,
+          transform: 'translateY(0)',
+          stagger: 0.1
+        })
+    }, container);
+
+
+    return () => ctx.revert()
+  }, [])
 
   const navBgCommonClasses = 'z-[5] absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-darkest transition-width duration-300'
 
   return (
-    <header className="fixed top-0 left-0 bg-transparent w-full z-10">
+    <header ref={container} className="fixed top-0 left-0 bg-transparent w-full z-10">
       <div
         className={`left-0 ${navBgCommonClasses} ${mobileNavOpen ? 'w-full' : 'w-0'}`}
       ></div>
@@ -51,7 +60,7 @@ const Navbar = (props: {}): JSX.Element => {
         className={`right-0 ${navBgCommonClasses} ${navBgActive ? 'w-full' : 'w-0'}`}
       ></div>
 
-      <nav className="container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg">
+      <nav className="nav opacity-0 -translate-y-full container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg">
         <Link
           href={'/'}
           className={'text-dark dark:text-lightest uppercase text-4xl z-10 font-semibold dark:font-medium'}
@@ -80,19 +89,19 @@ const Navbar = (props: {}): JSX.Element => {
 
         <ul className="hidden md:flex space-x-6">
           <li>
-            <NavLink href="#about">About</NavLink>
+            <NavLink className='nav-link opacity-0 -translate-y-12' href="#about">About</NavLink>
           </li>
 
           <li>
-            <NavLink href="#projects">Projects</NavLink>
+            <NavLink className='nav-link opacity-0 -translate-y-12' href="#projects">Projects</NavLink>
           </li>
 
           <li>
-            <NavLink href="#testimonials">Testimonials</NavLink>
+            <NavLink className='nav-link opacity-0 -translate-y-12' href="#testimonials">Testimonials</NavLink>
           </li>
 
           <li>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink className='nav-link opacity-0 -translate-y-12' href="#contact">Contact</NavLink>
           </li>
         </ul>
 
@@ -137,3 +146,14 @@ const Navbar = (props: {}): JSX.Element => {
 };
 
 export default Navbar;
+
+const NavLink = ({ children, href, className }: { children: React.ReactNode; href: string, className?: string }): JSX.Element => {
+  return (
+    <Link
+      href={href}
+      className={`text-dark dark:text-lightest relative uppercase px-2 text-base block hover:text-lightest dark:hover:text-primary before:bg-primary-light dark:before:bg-lightest font-medium dark:font-normal before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-0 before:w-full hover:before:h-full  before:-z-[1] z-10 transition-colors before:transition-all duration-300 before:duration-300 ${className}`}
+    >
+      {children}
+    </Link>
+  );
+};
