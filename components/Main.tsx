@@ -40,8 +40,7 @@ const Main = (props: {}): JSX.Element => {
                 })
                 .to(".about-button", {
                     scale: 1,
-                    duration: 0.5,
-                    delay: 0.3
+                    duration: 0.35,
                 })
         }, container);
 
