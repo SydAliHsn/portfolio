@@ -61,7 +61,7 @@ const Navbar = (props: {}): JSX.Element => {
         className={`right-0 ${navBgCommonClasses} ${navBgActive ? 'w-full' : 'w-0'}`}
       ></div>
 
-      <nav className="nav opacity-0 -translate-y-full container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg">
+      <nav className={`nav ${!navBgActive && 'opacity-0 -translate-y-full'} container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg`}>
         <Link
           href={'/'}
           className={'text-dark dark:text-lightest uppercase text-4xl z-10 font-semibold dark:font-medium'}
@@ -89,21 +89,12 @@ const Navbar = (props: {}): JSX.Element => {
         </button>
 
         <ul className="hidden md:flex space-x-6">
-          <li>
-            <NavLink className='nav-link opacity-0 -translate-y-12' href="#about">About</NavLink>
-          </li>
-
-          <li>
-            <NavLink className='nav-link opacity-0 -translate-y-12' href="#projects">Projects</NavLink>
-          </li>
-
-          <li>
-            <NavLink className='nav-link opacity-0 -translate-y-12' href="#testimonials">Testimonials</NavLink>
-          </li>
-
-          <li>
-            <NavLink className='nav-link opacity-0 -translate-y-12' href="#contact">Contact</NavLink>
-          </li>
+          {['about', 'projects', 'contact', 'testimonials'].map((el, i) => (
+            <li key={i}>
+              <NavLink className={`nav-link ${!navBgActive && 'opacity-0 -translate-y-12'}`} href={`#${el}`}>
+                {el[0].toUpperCase() + el.slice(1)}
+              </NavLink>
+            </li>))}
         </ul>
 
         <ul
