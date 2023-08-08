@@ -52,7 +52,7 @@ const Navbar = (props: {}): JSX.Element => {
   const navBgCommonClasses = 'absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-darkest transition-width duration-300'
 
   return (
-    <header ref={container} className="z-50 fixed top-0 left-0 bg-transparent w-full">
+    <header ref={container} className="z-20 fixed top-0 left-0 bg-transparent w-full">
       <div
         className={`left-0 ${navBgCommonClasses} ${mobileNavOpen ? 'w-full' : 'w-0'}`}
       ></div>
