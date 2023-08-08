@@ -58,6 +58,7 @@ const Form = (props: {}): JSX.Element => {
           name="name"
           required
           placeholder="Name"
+          value={contactData.name}
           onChange={e => setContactData({ ...contactData, name: e.target.value })}
         />
 
@@ -67,6 +68,7 @@ const Form = (props: {}): JSX.Element => {
           name="email"
           required
           placeholder="Email"
+          value={contactData.email}
           onChange={e => setContactData({ ...contactData, email: e.target.value })}
         />
       </div>
