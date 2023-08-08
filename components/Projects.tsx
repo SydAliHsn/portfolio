@@ -3,17 +3,13 @@
 import React from 'react';
 
 import ProjectCard from './ProjectCard';
-
+import bejeweled from '../public/projects/bejeweled.jpg';
 
 
 const Projects = (props: {}): JSX.Element => {
 
-  const skills = [
-    'Javascript', 'Typescript', 'React', 'Tailwind CSS'
-  ]
-
   return <section
-    className="section pt-24 text-darker dark:text-lightest"
+    className="section pt-24 mb-10 text-darker dark:text-lightest"
     id="projects"
   >
     <div className="container mx-auto px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl">
@@ -26,13 +22,13 @@ const Projects = (props: {}): JSX.Element => {
       <div className='mt-14 flex flex-col gap-20 sm:gap-24 lg:gap-28'>
 
         <ProjectCard
-          technologies={skills}
-          repoName='dev-jobs'
+          technologies={['Next.JS', 'Vanilla CSS', 'Typescript', 'Storyblock CMS']}
+          repoName='jewels'
           badge='Freelance Project'
-          title='Halcyon Theme'
-          img='https://filipivanovic.netlify.app/projects/filipblog.webp'
-          url='https://syyed.me'
-          content='A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
+          title='Bejeweled Store'
+          img={bejeweled}
+          url='https://bejeweledbybt.com'
+          content='A minimal and user-friendly online store for a small jewelry business using Next JS. The website elegantly showcases their unique handcrafted pieces, offering customers a seamless shopping experience that balances style and functionality'
         />
       </div>
     </div>

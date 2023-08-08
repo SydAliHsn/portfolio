@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -8,7 +8,7 @@ import { BiLogoGithub, BiLinkExternal } from 'react-icons/bi';
 import SecondaryButton from './SecondaryButton';
 import PrimaryButton from './PrimaryButton';
 
-interface Props { technologies: string[], badge: string, title: string, content: string, img: string, repoName: string, url: string, reverse?: boolean }
+interface Props { technologies: string[], badge: string, title: string, content: string, img: StaticImageData, repoName: string, url: string, reverse?: boolean }
 
 const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, reverse }: Props): JSX.Element => {
     const container = useRef(null);
@@ -17,7 +17,6 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         gsap.registerPlugin(ScrollTrigger);
 
         let ctx = gsap.context(() => {
-
             gsap.from(".fadeIn", {
                 scale: 0.85,
                 y: 70,
@@ -39,8 +38,8 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         className={`bg-lightest dark:bg-dark md:!bg-transparent relative p-4 sm:p-6 md:p-0 rounded-3xl flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 shadow-md shadow-light/10 dark:shadow-black/10 md:shadow-none`}>
 
         {/* Image Container */}
-        <Link href='https://todo.syyed.me' target='_blank' className='fadeIn md:w-[65%] h-full aspect-[14/10] rounded-3xl overflow-hidden relative shadow-project'>
-            <Image fill src={img} alt="my project" />
+        <Link href='https://todo.syyed.me' target='_blank' className='fadeIn md:w-[65%] rounded-3xl overflow-hidden relative shadow-project'>
+            <Image src={img} alt={title} className='hover:scale-105 transition-transform duration-300 h-full' style={{ maxWidth: '100%', }} />
         </Link>
         {/* End of Image Container */}
 
@@ -55,7 +54,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
 
             {/* Technology bubbles */}
             <ul className={`flex flex-wrap mt-4 gap-[0.6rem] ${!reverse && 'md:justify-end'}`}>
-                {technologies.map(tech => (<li key={tech} className="bg-lighter bg-opacity-70 dark:bg-transparent border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter md:text-sm text-xs">
+                {technologies.map(tech => (<li key={tech} className="bg-lighter dark:bg-darkest !bg-opacity-70 border-2 px-2 py-1 rounded-2xl border-light text-dark dark:text-lighter md:text-sm text-xs">
                     {tech}
                 </li>))}
             </ul>
