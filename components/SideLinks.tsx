@@ -50,7 +50,7 @@ const SideLinks = (props: {}): JSX.Element => {
             {icon}
           </Link>))}
 
-          <div className="w-[2px] h-28 bg-light"></div>
+          <div className="w-[2px] h-28 bg-gray-500 dark:bg-light"></div>
         </div>
       </div>
     </aside>
