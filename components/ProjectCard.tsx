@@ -68,7 +68,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
                     Source <BiLogoGithub className="font-medium text-2xl" />
                 </PrimaryButton>
 
-                <SecondaryButton href={url} className='flex-grow xs:flex-grow-0 '>
+                <SecondaryButton href={url} className='flex-grow xs:flex-grow-0'>
                     <BiLinkExternal /> Live View
                 </SecondaryButton>
             </div>
