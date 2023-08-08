@@ -12,7 +12,7 @@ const Form = (props: {}): JSX.Element => {
 
   const [messageBoxActive, setMessageBoxActive] = useState<boolean>(false);
 
-  const inputCommonClasses = 'block w-full p-7 rounded-3xl bg-lightest dark:bg-dark placeholder-text-light dark:placeholder-light text-dark dark:text-lightest text-lg border-2 border-light !outline-none focus:border-secondary-dark dark:focus:border-primary-light transition-border duration-300';
+  const inputCommonClasses = 'fadeIn block w-full p-7 rounded-3xl bg-lightest dark:bg-dark placeholder-text-light dark:placeholder-light text-dark dark:text-lightest text-lg border-2 border-light !outline-none focus:border-secondary-dark dark:focus:border-primary-light transition-border duration-300';
 
   const sendMessage = async () => {
     setMessageStatus('sending');
