@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
     return null;
   }
   return (
-    <div className="fixed z-50 bottom-5 right-5 md:bottom-8 md:right-8">
+    <div className="fixed z-30 bottom-5 right-5 md:bottom-8 md:right-8">
       <button
         onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         className={`rounded-full p-1 sm:p-3 shadow-md shadow-dark/20 dark:shadow-light/10 dark:shadow-black/10 hover:scale-105 transition-transform ${resolvedTheme === 'dark' ? 'bg-lightest' : 'bg-darkest'}`}
