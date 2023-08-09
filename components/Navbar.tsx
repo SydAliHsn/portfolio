@@ -78,7 +78,7 @@ const Navbar = (props: {}): JSX.Element => {
             className={`w-9 h-[3px] bg-dark dark:bg-lightest transition-all duration-200 ${mobileNavOpen && 'rotate-45 translate-y-3'}`}
           ></div>
           <div
-            className={`w-9 h-[3px] bg-dark dark:bg-lightest mb-[0.55rem] transition-all duration-200 ${mobileNavOpen && 'opacity-0'}`}
+            className={`w-9 h-[3px] bg-dark dark:bg-lightest mb-[0.55rem] ${mobileNavOpen && 'opacity-0'}`}
           ></div>
           <div
             className={`w-9 h-[3px] bg-dark dark:bg-lightest transition-all duration-200 ${mobileNavOpen && '-rotate-45 -translate-y-3'}`}
