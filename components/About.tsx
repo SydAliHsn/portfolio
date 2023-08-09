@@ -18,7 +18,6 @@ const skills = [
 
 const About = (props: {}): JSX.Element => {
   const container = useRef(null);
-  const svgContainer = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -66,12 +65,10 @@ const About = (props: {}): JSX.Element => {
             like-minded individuals and businesses, and contribute my unique perspectives and talents to the world around me.
           </p>
 
-          <p className="text-dark dark:text-lighter text-lg">
+          <p className="text-dark dark:text-lighter md:text-lg">
             I&apos;m constantly seeking ways to expand my knowledge and push the boundaries of my understanding. I find
             immense joy in the process of acquiring new skills and help others do the same through my work.
           </p>
-
-
 
           <div className='mt-2 xl:mt-8'>
             <h5 className="text-xl">Tools & Technologies</h5>
