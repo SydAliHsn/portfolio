@@ -33,7 +33,7 @@ const Projects = (props: {}): JSX.Element => {
         />
 
         <ProjectCard
-          technologies={['React.JS', 'SASS', 'Express', 'MongoDB']}
+          technologies={['React.JS', 'Redux', 'SASS', 'Express', 'MongoDB']}
           repoName='dev-jobs'
           reverse
           badge='Practice Project'
