@@ -18,13 +18,13 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
 
         let ctx = gsap.context(() => {
             gsap.from(".fadeIn", {
-                scale: 0.85,
+                scale: 0.9,
                 y: 50,
                 opacity: 0,
                 duration: 0.6,
                 scrollTrigger: {
                     trigger: container.current,
-                    start: "top 65%",
+                    start: "top 75%",
                 },
                 stagger: 0.3,
             })
