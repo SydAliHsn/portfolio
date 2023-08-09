@@ -115,7 +115,7 @@ const Navbar = (props: {}): JSX.Element => {
             {[
 
               { icon: <BiLogoGithub />, link: 'https://github.com/SydAliHsn' },
-              { icon: <BiLogoLinkedin />, link: 'https://linkedin.com/SydAliHsn' },
+              { icon: <BiLogoLinkedin />, link: 'https://linkedin.com/in/SydAliHsn' },
               { icon: <BiLogoTwitter />, link: 'https://twitter.com/SydAliHsn' },
               { icon: <BiLogoInstagram />, link: 'https://instagram.com/SydAliHsn' },
 

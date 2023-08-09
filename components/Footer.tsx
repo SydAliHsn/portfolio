@@ -7,7 +7,7 @@ const Footer = (props: {}): JSX.Element => {
     <footer className="text-light flex flex-col gap-4 items-center mt-16 pb-3">
       <div className="flex justify-center gap-4 md:hidden text-3xl">
         <Link
-          href={'https://github.com/SydAliHsn'}
+          href={'https://linkedin.com/in/SydAliHsn'}
           className="hover:text-lightest"
         >
           <BiLogoLinkedin />
@@ -21,14 +21,14 @@ const Footer = (props: {}): JSX.Element => {
         </Link>
 
         <Link
-          href={'https://github.com/SydAliHsn'}
+          href={'https://twitter.com/SydAliHsn'}
           className="hover:text-lightest"
         >
           <BiLogoTwitter />
         </Link>
 
         <Link
-          href={'https://github.com/SydAliHsn'}
+          href={'https://instagram.com/SydAliHsn'}
           className="hover:text-lightest"
         >
           <BiLogoInstagram />
