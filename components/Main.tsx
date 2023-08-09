@@ -67,7 +67,7 @@ const Main = (props: {}): JSX.Element => {
                     speed={30}
                     eraseSpeed={30}
                     eraseDelay={1500}
-                    text={[`Fullstack Developer`, `Bug Bounty Hunter`, `Tech Enthusiast`, 'Student']}
+                    text={[`Fullstack Developer`, `Freelancer`, `Tech Enthusiast`, 'Student']}
                 />
             </h2>
 
