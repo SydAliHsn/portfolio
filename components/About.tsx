@@ -57,18 +57,18 @@ const About = (props: {}): JSX.Element => {
           <h2 className="text-3xl sm:text-4xl font-extrabold">About</h2>
 
           <h4 className="text-xl md:text-2xl">
-            I&apos;m Ali, a passionate and creative individual who thrives on self-learning and exploring new ideas.
+            I&apos;m Ali, a passionate and creative individual who thrives on turning ideas into reality through his technical skills and knowledge.
           </h4>
 
           <p className="text-dark dark:text-lighter md:text-lg">
-            My passion for self-learning, creativity, and exploration drives me to constantly seek out new experiences
+            My passion for self-learning, creation, and exploration drives me to constantly seek out new experiences
             and push the boundaries of my own potential. I am excited to embark on new adventures, collaborate with
-            like-minded individuals, and contribute my unique perspectives and talents to the world around me.
+            like-minded individuals and businesses, and contribute my unique perspectives and talents to the world around me.
           </p>
 
           <p className="text-dark dark:text-lighter text-lg">
             I&apos;m constantly seeking ways to expand my knowledge and push the boundaries of my understanding. I find
-            immense joy in the process of acquiring new skills and discovering innovative concepts.
+            immense joy in the process of acquiring new skills and help others do the same through my work.
           </p>
 
 
