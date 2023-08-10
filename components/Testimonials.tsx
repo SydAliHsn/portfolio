@@ -6,8 +6,12 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { AiFillStar } from 'react-icons/ai'
 
-const Testimonial = ({ name, review, numStars }: { name: string, review: string, numStars: number }): JSX.Element => {
-    return <div className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 md:w-2/3 p-6 md:p-6 lg:p-8 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn !pb-14">
+const Testimonial = ({ name, review, numStars, iconColor }: { name: string, review: string, numStars: number, iconColor: string }): JSX.Element => {
+    const iconColorClass = 'bg-' + iconColor;
+
+    return <div className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 md:w-2/3 px-6 lg:px-8 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn pb-14 pt-10 relative">
+        <span className={`${iconColorClass} grid items-center text-lg absolute -top-5 left-[50%] -translate-x-[50%] justify-center h-[3.2rem] w-[3.2rem] rounded-full`} >{name[0].toUpperCase()}</span>
+
         <h3 className='text-xl font-medium'>{name}</h3>
 
         <div className='text-yellow-500 text-center'>
@@ -54,26 +58,29 @@ const Testimonials = (props: {}): JSX.Element => {
         >
             <div ref={container} className="container mx-auto px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl space-y-6">
 
-                <div className='text-center fadeIn'>
-                    <h2 className="text-4xl md:text-5xl font-bold">Testimonials</h2>
+                <div className='text-center'>
+                    <h2 className="fadeIn text-4xl md:text-5xl font-bold">Testimonials</h2>
                     <p className='text-lg md:text-xl py-4 md:py-6 leading-15'>Extremely satisfied clients from across the world. Translating their wishes into fine-tailored digital solutions.</p>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-6 mt-20">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-6 mt-20">
 
                     <Testimonial name='Musa Yasin'
                         review='Very professional, friendly, good prices definitely recommended.'
                         numStars={5}
+                        iconColor='yellow-500'
                     />
 
                     <Testimonial name='Josh Donald'
                         review='Transparent and flexible about his way of working. He thinks along to set up a solution that works in the long run.'
                         numStars={5}
+                        iconColor='sky-600'
                     />
 
                     <Testimonial name='Sadeem Yasir'
                         review='Superb work. Think along and find a solution. Very good value and quality work done. Extremely satisfied. Thank you.'
                         numStars={5}
+                        iconColor='pink-500'
                     />
                 </div>
             </div>
