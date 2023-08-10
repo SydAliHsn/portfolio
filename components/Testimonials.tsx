@@ -7,10 +7,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { AiFillStar } from 'react-icons/ai'
 
 const Testimonial = ({ name, review, numStars, iconColor }: { name: string, review: string, numStars: number, iconColor: string }): JSX.Element => {
-    const iconColorClass = 'bg-' + iconColor;
-
     return <div className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 md:w-2/3 px-6 lg:px-8 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn pb-14 pt-10 relative">
-        <span className={`${iconColorClass} grid items-center text-lg absolute -top-5 left-[50%] -translate-x-[50%] justify-center h-[3.2rem] w-[3.2rem] rounded-full`} >{name[0].toUpperCase()}</span>
+        <span className='{`${iconColorClass} grid items-center text-lg absolute -top-5 left-[50%] -translate-x-[50%] justify-center h-[3.2rem] w-[3.2rem] rounded-full'
+            style={{ backgroundColor: iconColor }}
+        >{name[0].toUpperCase()}</span>
 
         <h3 className='text-xl font-medium'>{name}</h3>
 
@@ -19,7 +19,7 @@ const Testimonial = ({ name, review, numStars, iconColor }: { name: string, revi
         </div>
 
         <p>{review}</p>
-    </div>
+    </div >
 }
 
 const Testimonials = (props: {}): JSX.Element => {
@@ -68,19 +68,19 @@ const Testimonials = (props: {}): JSX.Element => {
                     <Testimonial name='Musa Yasin'
                         review='Very professional, friendly, good prices definitely recommended.'
                         numStars={5}
-                        iconColor='yellow-500'
+                        iconColor='#20f720'
                     />
 
                     <Testimonial name='Josh Donald'
                         review='Transparent and flexible about his way of working. He thinks along to set up a solution that works in the long run.'
                         numStars={5}
-                        iconColor='sky-600'
+                        iconColor='#4287f5'
                     />
 
                     <Testimonial name='Sadeem Yasir'
                         review='Superb work. Think along and find a solution. Very good value and quality work done. Extremely satisfied. Thank you.'
                         numStars={5}
-                        iconColor='pink-500'
+                        iconColor='#f525f1'
                     />
                 </div>
             </div>
