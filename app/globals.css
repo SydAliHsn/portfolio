@@ -51,3 +51,71 @@ body {
 .dark .shadow-project {
   box-shadow: 0px 0px 30px 0px rgba(17, 97, 155, 0.5);
 }
+
+/* Hamburger Button */
+.hamb {
+  position: relative;
+  /* margin-right: -0.625rem; */
+  /* border-width: 0px; */
+  background-color: transparent;
+  padding: 0;
+}
+/* .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+} */
+.hamb .ham {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.hamb .ham {
+  height: 35px;
+  width: 38px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.hamb svg {
+  transform: scale(1.9);
+}
+.hamb .ham .top {
+  stroke-dasharray: 40 160;
+}
+.hamb .ham .middle {
+  transform-origin: 50%;
+  stroke-dasharray: 40 142;
+}
+.hamb .ham .bottom {
+  transform-origin: 50%;
+  stroke-dasharray: 40 85;
+}
+.hamb .line {
+  fill: none;
+  stroke: white;
+  stroke-width: 5;
+  transition-duration: 0.3s;
+  stroke-linecap: round;
+}
+.hamb.active svg {
+  --tw-rotate: 45deg;
+  transform: rotate(var(--tw-rotate)) scale(1.9);
+}
+.hamb.active svg .top {
+  stroke-dashoffset: -64px;
+}
+.hamb.active svg .middle {
+  --tw-rotate: 90deg;
+  transform: rotate(var(--tw-rotate));
+}
+.hamb.active svg .bottom {
+  stroke-dashoffset: -64px;
+}
+/* End of Hamburger Button */
