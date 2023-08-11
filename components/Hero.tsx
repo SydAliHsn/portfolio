@@ -6,7 +6,7 @@ import { gsap } from 'gsap';
 import ReactTypingEffect from 'react-typing-effect';
 
 
-const Main = (props: {}): JSX.Element => {
+const Hero = (props: {}): JSX.Element => {
     const container = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -48,7 +48,7 @@ const Main = (props: {}): JSX.Element => {
         return () => ctx.revert();
     }, []);
 
-    return <main className="mx-auto min-h-screen flex items-centersection bg-angled">
+    return <section className="mx-auto min-h-screen flex items-center section bg-angled">
         <div ref={container} className="container flex flex-col items-start justify-center flex-grow mx-auto px-4 sm:px-4 md:px-20 lg:px-[7.5rem]">
 
             <h4 className="text-primary-light dark:text-secondary text-2xl font-medium">
@@ -78,7 +78,7 @@ const Main = (props: {}): JSX.Element => {
                 <Link href="#about">About Me</Link>
             </button>
         </div>
-    </main>
+    </section>
 };
 
-export default Main;
+export default Hero;
