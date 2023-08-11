@@ -17,7 +17,7 @@ export interface EmailData {
 export const sendEmail = async ({ message, email, name }: EmailData) => {
     let mailDetails = {
         from: email,
-        to: 'syedalihassan6651@gmail.com',
+        to: process.env.RECEIVING_EMAIL,
         subject: `Message from ${name} <${email}> through your website.`,
         text: message
     };
