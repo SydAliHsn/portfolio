@@ -52,14 +52,14 @@ const Contact = (props: {}): JSX.Element => {
             </Link>
 
             <Link
-              href={'/resume'}
+              href={'https://linkedin.com/in/SydAliHsn'}
               className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15]"
             >
               <BiLogoLinkedin />
             </Link>
 
             <Link
-              href={'/resume'}
+              href={'https://twitter.com/SydAliHsn'}
               className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15]"
             >
               <BiLogoTwitter />
