@@ -24,9 +24,7 @@ const Testimonials = (props: {}): JSX.Element => {
                     trigger: container.current,
                     start: "top 65%",
                 },
-                stagger: {
-                    amount: 1,
-                },
+                stagger: 0.5
             })
         }, container);
 
