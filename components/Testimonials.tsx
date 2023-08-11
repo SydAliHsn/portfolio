@@ -6,21 +6,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { AiFillStar } from 'react-icons/ai'
 
-const Testimonial = ({ name, review, numStars, iconColor }: { name: string, review: string, numStars: number, iconColor: string }): JSX.Element => {
-    return <div className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 md:w-2/3 px-6 lg:px-8 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn pb-14 pt-10 relative">
-        <span className='{`${iconColorClass} grid items-center text-lg absolute -top-5 left-[50%] -translate-x-[50%] justify-center h-[3.2rem] w-[3.2rem] rounded-full'
-            style={{ backgroundColor: iconColor }}
-        >{name[0].toUpperCase()}</span>
 
-        <h3 className='text-xl font-medium'>{name}</h3>
-
-        <div className='text-yellow-500 text-center'>
-            {[...Array(numStars)].map((_, i) => <AiFillStar className='inline' key={i} />)}
-        </div>
-
-        <p>{review}</p>
-    </div >
-}
 
 const Testimonials = (props: {}): JSX.Element => {
     const container = useRef(null);
@@ -89,3 +75,19 @@ const Testimonials = (props: {}): JSX.Element => {
 };
 
 export default Testimonials;
+
+const Testimonial = ({ name, review, numStars, iconColor }: { name: string, review: string, numStars: number, iconColor: string }): JSX.Element => {
+    return <article className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 md:w-2/3 px-6 lg:px-8 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn pb-14 pt-10 relative">
+        <span className='{`${iconColorClass} grid items-center text-lg absolute -top-5 left-[50%] -translate-x-[50%] justify-center h-[3.2rem] w-[3.2rem] rounded-full'
+            style={{ backgroundColor: iconColor }}
+        >{name[0].toUpperCase()}</span>
+
+        <h3 className='text-xl font-medium'>{name}</h3>
+
+        <div className='text-yellow-500 text-center'>
+            {[...Array(numStars)].map((_, i) => <AiFillStar className='inline' key={i} />)}
+        </div>
+
+        <p>{review}</p>
+    </article >
+}

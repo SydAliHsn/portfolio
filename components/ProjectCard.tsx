@@ -33,7 +33,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         return () => ctx.revert()
     }, [])
 
-    return <div
+    return <article
         ref={container}
         className={`bg-lightest dark:bg-dark md:!bg-transparent relative p-4 sm:p-6 md:p-0 rounded-3xl flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 shadow-md shadow-light/10 dark:shadow-black/10 md:shadow-none`}>
 
@@ -82,7 +82,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
             </div>
             {/* End of Small Buttons (only for bigger screen) */}
         </div>
-    </div>
+    </article>
     {/* End of Text/Content Container */ }
 }
 
