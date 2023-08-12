@@ -1,8 +1,6 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import React from 'react';
 import { HiOutlineChatBubbleOvalLeft } from 'react-icons/hi2';
 import { FaRegAddressCard } from 'react-icons/fa';
 
@@ -17,39 +15,18 @@ const skills = [
 ]
 
 const About = (props: {}): JSX.Element => {
-  const container = useRef(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
 
-    let ctx = gsap.context(() => {
-      gsap.from(".fadeIn", {
-        scale: 0.9,
-        opacity: 0,
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: container.current,
-          start: "top 65%",
-        },
-        stagger: 0.4
-      })
-    }, container);
-
-    return () => {
-      ctx.revert();
-    }
-  }, [container]);
-
-  const cardCommonClasses = 'fadeIn h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2'
+  const cardCommonClasses = 'h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2'
 
   return (
     <section
       className="section pt-24 text-darker dark:text-lightest"
       id="about"
     >
-      <div ref={container} className="container mx-auto flex flex-col md:flex-row gap-4 px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl md:max-h-[63rem] lg:max-h-[60rem] xl:max-h-[51rem]">
+      <div className="container mx-auto flex flex-col md:flex-row gap-4 px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl md:max-h-[63rem] lg:max-h-[60rem] xl:max-h-[51rem]">
 
-        <div className="fadeIn p-6 md:p-6 lg:p-8 bg-lightest shadow-md shadow-light/10 dark:shadow-black/10 dark:bg-dark rounded-4xl flex flex-col gap-5 md:w-2/3">
+        <div className="p-6 md:p-6 lg:p-8 bg-lightest shadow-md shadow-light/10 dark:shadow-black/10 dark:bg-dark rounded-4xl flex flex-col gap-5 md:w-2/3">
           <h2 className="text-3xl sm:text-4xl font-extrabold">About</h2>
 
           <h4 className="text-xl md:text-2xl">
