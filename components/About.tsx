@@ -29,7 +29,7 @@ const About = (props: {}): JSX.Element => {
         duration: 0.4,
         scrollTrigger: {
           trigger: personalityContainer.current,
-          start: "top 65%",
+          start: "top 75%",
         },
         stagger: 0.4,
       })
