@@ -19,12 +19,12 @@ const Testimonials = (props: {}): JSX.Element => {
                 scale: 0.9,
                 y: 50,
                 opacity: 0,
-                duration: 0.6,
+                duration: 0.4,
                 scrollTrigger: {
                     trigger: container.current,
                     start: "top 65%",
                 },
-                stagger: 0.5
+                stagger: 0.3
             })
         }, container);
 
@@ -44,7 +44,7 @@ const Testimonials = (props: {}): JSX.Element => {
 
                 <div className='text-center'>
                     <h2 className="fadeIn text-4xl md:text-5xl font-bold">Testimonials</h2>
-                    <p className='text-lg md:text-xl py-4 md:py-6 leading-15'>Extremely satisfied clients from across the world. Translating their wishes into fine-tailored digital solutions.</p>
+                    <p className='fadeIn text-lg md:text-xl py-4 md:py-6 leading-15'>Extremely satisfied clients from across the world. Translating their wishes into fine-tailored digital solutions.</p>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-10 md:gap-6 mt-20">
