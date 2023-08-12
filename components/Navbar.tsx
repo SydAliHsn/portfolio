@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { gsap } from 'gsap';
 import { BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiLogoInstagram } from 'react-icons/bi';
 
+const sections = ['about', 'projects', 'testimonials', 'contact',];
 
 const Navbar = (props: {}): JSX.Element => {
   const [navBgActive, setNavBgActive] = useState(false);
@@ -79,7 +80,7 @@ const Navbar = (props: {}): JSX.Element => {
         </button>
 
         <ul className="hidden md:flex space-x-6">
-          {['about', 'projects', 'contact', 'testimonials'].map((el, i) => (
+          {sections.map((el, i) => (
             <li key={i}>
               <NavLink className={`nav-link ${!navBgActive && 'opacity-0 -translate-y-12'}`} href={`#${el}`}>
                 {el[0].toUpperCase() + el.slice(1)}
@@ -91,7 +92,7 @@ const Navbar = (props: {}): JSX.Element => {
           className={`z-10 bg-lightest dark:bg-darkest md:hidden absolute top-[4.7rem] h-[100vh] w-[100vw] transition-all duration-300 p-5 space-y-7 ${mobileNavOpen ? 'left-0' : 'left-full'
             }`}
         >
-          {['about', 'projects', 'contact', 'testimonials'].map((el, i) => (
+          {sections.map((el, i) => (
             <li key={i}>
               <Link
                 href={`#${el}`}
