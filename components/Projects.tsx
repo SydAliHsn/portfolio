@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ProjectCard from './ProjectCard';
 import bejeweled from '../public/projects/bejeweled.jpg';
 import devjobs from '../public/projects/devjobs.png';
+import archStudio from '../public/projects/arch-studio.jpg';
 
 
 const Projects = (props: {}): JSX.Element => {
@@ -65,6 +66,17 @@ const Projects = (props: {}): JSX.Element => {
           url='https://cute-cyan-brown-bear-cuff.cyclic.app/'
           content='A simple job listing board made with React and styled with SASS/SCSS. The website fetches data from an Express backend using MongoDB and displays it in a clean and minimalistic UI.'
         />
+
+        <ProjectCard
+          technologies={['Javascript', 'SASS/SCSS', 'HTML',]}
+          repoName='Arch-Studio'
+          badge='Practice Project'
+          title='Real Estate Website'
+          img={archStudio}
+          url='https://ali-arch-studio.netlify.app'
+          content='A simple portfolio website for an imaginary Real Estate Firm. Its Fully responsive and has a minimalist clean UI.'
+        />
+
       </div>
     </div>
   </section >
