@@ -3,11 +3,14 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { BiLogoGithub } from 'react-icons/bi';
+
 
 import ProjectCard from './ProjectCard';
 import bejeweled from '../public/projects/bejeweled.jpg';
 import devjobs from '../public/projects/devjobs.png';
 import archStudio from '../public/projects/arch-studio.jpg';
+import Link from 'next/link';
 
 
 const Projects = (props: {}): JSX.Element => {
@@ -74,8 +77,12 @@ const Projects = (props: {}): JSX.Element => {
           title='Real Estate Website'
           img={archStudio}
           url='https://ali-arch-studio.netlify.app'
-          content='A simple portfolio website for an imaginary Real Estate Firm. Its Fully responsive and has a minimalist clean UI.'
+          content='A simple portfolio website for an imaginary Real Estate Firm. It&apos;s Fully responsive and has a minimalist clean UI.'
         />
+
+        <div>
+          <p className='text-center text-lg md:text-xl'>See all of my work on <Link className='font-medium text-primary-light dark:text-secondary-dark' target='_blank' href={'https://Github.com/SydAliHsn'}>My Github <BiLogoGithub className='inline-block text-2xl' /></Link></p>
+        </div>
 
       </div>
     </div>
