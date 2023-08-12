@@ -24,14 +24,14 @@ const About = (props: {}): JSX.Element => {
 
     let ctx = gsap.context(() => {
       gsap.from(".fadeIn", {
-        scale: 0.80,
+        scale: 0.9,
         opacity: 0,
         duration: 0.5,
         scrollTrigger: {
           trigger: container.current,
           start: "top 65%",
         },
-        stagger: 0.3
+        stagger: 0.4
       })
     }, container);
 
