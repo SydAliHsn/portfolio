@@ -1,6 +1,8 @@
 'use client'
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { HiOutlineChatBubbleOvalLeft } from 'react-icons/hi2';
 import { FaRegAddressCard } from 'react-icons/fa';
 
@@ -15,9 +17,29 @@ const skills = [
 ]
 
 const About = (props: {}): JSX.Element => {
+  const personalityContainer = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let ctx = gsap.context(() => {
+      gsap.from(".fadeIn", {
+        scale: 0.8,
+        opacity: 0,
+        duration: 0.4,
+        scrollTrigger: {
+          trigger: personalityContainer.current,
+          start: "top 65%",
+        },
+        stagger: 0.5,
+      })
+    }, personalityContainer);
+
+    return () => ctx.revert()
+  }, [])
 
 
-  const cardCommonClasses = 'h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2'
+  const cardCommonClasses = 'h-40 md:h-full p-2 md:p-4 shadow-md shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 fadeIn'
 
   return (
     <section
@@ -67,7 +89,7 @@ const About = (props: {}): JSX.Element => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 md:grid-cols-none md:grid-rows-3 gap-2 md:gap-4 md:w-1/3">
+        <div ref={personalityContainer} className="grid grid-cols-3 md:grid-cols-none md:grid-rows-3 gap-2 md:gap-4 md:w-1/3">
           <div className={cardCommonClasses}>
             <p className="xs:text-lg md:text-2xl font-medium text-center">Productive</p>
 
