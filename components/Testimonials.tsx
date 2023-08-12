@@ -37,7 +37,7 @@ const Testimonials = (props: {}): JSX.Element => {
 
     return (
         <section
-            className="section pt-32 text-darker dark:text-lightest"
+            className="section pt-24 mt-8 text-darker dark:text-lightest"
             id="testimonials"
         >
             <div ref={container} className="container mx-auto px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl space-y-6">
@@ -47,7 +47,7 @@ const Testimonials = (props: {}): JSX.Element => {
                     <p className='fadeIn text-lg md:text-xl py-4 md:py-6 leading-15'>Extremely satisfied clients from across the world. Translating their wishes into fine-tailored digital solutions.</p>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-10 md:gap-6 mt-20">
+                <div className="flex flex-col lg:flex-row gap-10 md:gap-6 mt-20">
 
                     <Testimonial name='Musa Yasin'
                         review='Very professional, friendly, good prices definitely recommended.'
@@ -75,7 +75,7 @@ const Testimonials = (props: {}): JSX.Element => {
 export default Testimonials;
 
 const Testimonial = ({ name, review, numStars, iconColor }: { name: string, review: string, numStars: number, iconColor: string }): JSX.Element => {
-    return <article className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 md:w-2/3 px-6 lg:px-8 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn pb-14 pt-10 relative">
+    return <article className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn lg:w-1/3 px-4 sm:px-6 lg:px-8 pb-14 pt-10 relative">
         <span className='{`${iconColorClass} grid items-center text-lg absolute -top-5 left-[50%] -translate-x-[50%] justify-center h-[3.2rem] w-[3.2rem] rounded-full'
             style={{ backgroundColor: iconColor }}
         >{name[0].toUpperCase()}</span>
