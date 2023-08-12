@@ -23,7 +23,7 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
                 duration: 0.4,
                 scrollTrigger: {
                     trigger: container.current,
-                    start: "top 75%",
+                    start: "top 65%",
                 },
                 stagger: 0.3,
             })
