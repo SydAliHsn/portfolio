@@ -31,7 +31,7 @@ const About = (props: {}): JSX.Element => {
           trigger: personalityContainer.current,
           start: "top 65%",
         },
-        stagger: 0.5,
+        stagger: 0.4,
       })
     }, personalityContainer);
 
