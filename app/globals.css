@@ -122,3 +122,8 @@ body {
   stroke-dashoffset: -64px;
 }
 /* End of Hamburger Button */
+
+.fadeIn,
+.fadeUp {
+  will-change: transform, opacity;
+}
