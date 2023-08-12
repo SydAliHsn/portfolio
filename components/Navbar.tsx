@@ -50,7 +50,7 @@ const Navbar = (props: {}): JSX.Element => {
     return () => ctx.revert()
   }, [])
 
-  const navBgCommonClasses = 'absolute top-0 h-full shadow-lg shadow-light/10 dark:shadow-black/10 bg-lightest dark:bg-darkest transition-width duration-300'
+  const navBgCommonClasses = 'absolute top-0 h-full shadow-md shadow-light/30 dark:shadow-black/20 bg-lightest dark:bg-darkest transition-width duration-300'
 
   return (
     <header ref={container} className="z-20 fixed top-0 left-0 bg-transparent w-full">
