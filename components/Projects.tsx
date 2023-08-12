@@ -47,7 +47,7 @@ const Projects = (props: {}): JSX.Element => {
         <p className='fadeUp text-xl sm:text-2xl md:text-3xl font-normal'>Things I&apos;ve made trying to put my dent in the universe.</p>
       </div>
 
-      <div className='mt-14 flex flex-col gap-20 sm:gap-24 lg:gap-28'>
+      <div className='sm:mt-10 mt-14 flex flex-col gap-20 sm:gap-24 lg:gap-28'>
 
         <ProjectCard
           technologies={['Next.JS', 'Vanilla CSS', 'Typescript', 'Storyblock CMS']}
@@ -80,9 +80,8 @@ const Projects = (props: {}): JSX.Element => {
           content='A simple portfolio website for an imaginary Real Estate Firm. It&apos;s Fully responsive and has a minimalist clean UI.'
         />
 
-        <div>
-          <p className='text-center text-lg md:text-xl'>See all of my work on <Link className='font-medium text-primary-light dark:text-secondary-dark' target='_blank' href={'https://Github.com/SydAliHsn'}>My Github <BiLogoGithub className='inline-block text-2xl' /></Link></p>
-        </div>
+
+        <p className='-mt-4 text-center text-lg md:text-xl'>See all of my work on <Link className='font-medium text-primary-light dark:text-secondary-dark' target='_blank' href={'https://Github.com/SydAliHsn'}>My Github <BiLogoGithub className='inline-block text-2xl' /></Link></p>
 
       </div>
     </div>
