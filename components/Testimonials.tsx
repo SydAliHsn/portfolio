@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import { gsap } from 'gsap/gsap-core';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { AiFillStar } from 'react-icons/ai'

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { gsap } from 'gsap';
+import { gsap } from 'gsap/gsap-core';
 import ReactTypingEffect from 'react-typing-effect';
 
 

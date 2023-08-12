@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { gsap } from 'gsap';
+import { gsap } from 'gsap/gsap-core';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { BiLogoGithub, BiLinkExternal } from 'react-icons/bi';
 
