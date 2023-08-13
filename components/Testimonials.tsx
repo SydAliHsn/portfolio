@@ -75,7 +75,7 @@ const Testimonials = (props: {}): JSX.Element => {
 export default Testimonials;
 
 const Testimonial = ({ name, review, numStars, iconColor }: { name: string, review: string, numStars: number, iconColor: string }): JSX.Element => {
-    return <article className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn lg:w-1/3 px-4 sm:px-6 lg:px-8 pb-14 pt-10 relative">
+    return <article className="text-center bg-lightest dark:bg-dark rounded-4xl flex flex-col gap-2 shadow-md shadow-light/10 dark:shadow-black/10 fadeIn lg:w-1/3 px-4 sm:px-6 lg:px-4 xl:px-8 pb-14 pt-10 relative">
         <span className='{`${iconColorClass} grid items-center text-lg absolute -top-5 left-[50%] -translate-x-[50%] justify-center h-[3.2rem] w-[3.2rem] rounded-full'
             style={{ backgroundColor: iconColor }}
         >{name[0].toUpperCase()}</span>
