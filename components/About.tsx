@@ -92,21 +92,17 @@ const About = (props: {}): JSX.Element => {
         <div ref={personalityContainer} className="grid grid-cols-3 md:grid-cols-none md:grid-rows-3 gap-2 md:gap-4 md:w-1/3">
           <div className={cardCommonClasses}>
             <p className="xs:text-lg md:text-2xl font-medium text-center">Productive</p>
-
             <Productive />
-
           </div>
 
           <div className={cardCommonClasses}>
             <p className="xs:text-lg md:text-2xl font-medium text-center">Creative</p>
-            <Creative />
+            <Creative className='h-full' />
           </div>
 
           <div className={cardCommonClasses}>
             <p className="xs:text-lg md:text-2xl text-center">Self-Learner</p>
-
             <SelfTaught />
-
           </div>
         </div>
       </div>

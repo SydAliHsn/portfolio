@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Creative = (props: {}): JSX.Element => {
+const Creative = ({ className }: { className?: string }): JSX.Element => {
   return (
     <svg
       id="Layer_1"
@@ -9,6 +9,7 @@ const Creative = (props: {}): JSX.Element => {
       viewBox="12.05 119.33 575.83 399.05"
       width="initial"
       height="initial"
+      className={className}
     >
       <title>doodle</title>
       <path
