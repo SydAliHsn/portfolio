@@ -83,7 +83,6 @@ const Hero = (props: {}): JSX.Element => {
                             return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-top transition-transform ease-in-out duration-300 group-hover:scale-y-0">{letter}</span>
                         })}
                     </div>
-                    {/* Testing Vercel redeploy */}
                     <div className='flex items-center'>
                         {'About Me'.split('').map((letter, i) => {
                             if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
