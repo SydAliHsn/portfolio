@@ -74,11 +74,26 @@ const Hero = (props: {}): JSX.Element => {
             <p className="intro opacity-0 text-xl text-dark dark:text-lighter font-normal py-1">
                 I like building and breaking things on the Internet!
             </p>
-            <button className="about-button scale-0 bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md">
-                <Link href="#about">About Me</Link>
+
+            <button className="scale-0 about-button bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md group relative">
+                <Link href="#about" >
+                    <div className='flex items-center absolute'>
+                        {'About Me'.split('').map((letter, i) => {
+                            if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
+                            return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-top transition-transform ease-in-out duration-300 group-hover:scale-y-0">{letter}</span>
+                        })}
+                    </div>
+                    <div className='flex items-center'>
+                        {'About Me'.split('').map((letter, i) => {
+                            if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
+                            return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-bottom transition-transform ease-in-out duration-300 scale-y-0 group-hover:scale-y-100">{letter}</span>
+                        })}
+                    </div>
+                </Link>
             </button>
-        </div>
-    </section>
+
+        </div >
+    </section >
 };
 
 export default Hero;
