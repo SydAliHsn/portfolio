@@ -50,7 +50,7 @@ const Navbar = (props: {}): JSX.Element => {
     return () => ctx.revert()
   }, [])
 
-  const navBgCommonClasses = 'absolute top-0 h-full shadow-md shadow-light/30 dark:shadow-black/20 bg-lightest dark:bg-darkest transition-width duration-300'
+  const navBgCommonClasses = 'absolute top-0 h-full bg-lightest dark:bg-darkest transition-width duration-300'
 
   return (
     <header ref={container} className="z-20 fixed top-0 left-0 bg-transparent w-full">
@@ -59,7 +59,7 @@ const Navbar = (props: {}): JSX.Element => {
       ></div>
 
       <div
-        className={`right-0 ${navBgCommonClasses} ${navBgActive ? 'w-full' : 'w-0'}`}
+        className={`right-0 shadow-md shadow-light/30 dark:shadow-black/20 ${navBgCommonClasses} ${navBgActive ? 'w-full' : 'w-0'}`}
       ></div>
 
       <nav className={`nav ${!navBgActive && 'opacity-0 -translate-y-full'} container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg`}>
