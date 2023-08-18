@@ -100,7 +100,7 @@ const Navbar = (props: {}): JSX.Element => {
                 className="text-dark dark:text-lightest block transition-all"
                 style={{
                   transitionDuration: mobileNavOpen ? '0.3s' : '0s',
-                  transitionDelay: (i + 2) * 0.1 + 's',
+                  transitionDelay: mobileNavOpen ? (i + 2) * 0.1 + 's' : '0s',
                   transitionTimingFunction: 'ease-out',
                   opacity: mobileNavOpen ? 1 : 0,
                   transform: mobileNavOpen ? 'translateX(0)' : 'translateX(-3rem)'
@@ -120,13 +120,12 @@ const Navbar = (props: {}): JSX.Element => {
               { icon: <BiLogoLinkedin />, link: 'https://linkedin.com/in/SydAliHsn' },
               { icon: <BiLogoTwitter />, link: 'https://twitter.com/SydAliHsn' },
               { icon: <BiLogoInstagram />, link: 'https://instagram.com/SydAliHsn' },
-
             ].map(({ icon, link }, i) => (<Link
               key={i}
               href={link}
               style={{
                 transitionDuration: mobileNavOpen ? '0.3s' : '0s',
-                transitionDelay: (i + 2) * 0.1 + 's',
+                transitionDelay: mobileNavOpen ? (i + 2) * 0.1 + 's' : '0s',
                 transitionTimingFunction: 'ease-out',
                 opacity: mobileNavOpen ? 1 : 0,
                 transform: mobileNavOpen ? 'translateX(0)' : 'translateX(3rem)'
