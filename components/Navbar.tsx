@@ -97,7 +97,14 @@ const Navbar = (props: {}): JSX.Element => {
             <li key={i}>
               <Link
                 href={`#${el}`}
-                className="text-dark dark:text-lightest block"
+                className="text-dark dark:text-lightest block transition-all"
+                style={{
+                  transitionDuration: mobileNavOpen ? '0.3s' : '0s',
+                  transitionDelay: (i + 2) * 0.1 + 's',
+                  transitionTimingFunction: 'ease-out',
+                  opacity: mobileNavOpen ? 1 : 0,
+                  transform: mobileNavOpen ? 'translateX(0)' : 'translateX(-3rem)'
+                }}
                 onClick={() => setMobileNavOpen(false)}
               >
                 {el[0].toUpperCase() + el.slice(1)}
@@ -117,6 +124,13 @@ const Navbar = (props: {}): JSX.Element => {
             ].map(({ icon, link }, i) => (<Link
               key={i}
               href={link}
+              style={{
+                transitionDuration: mobileNavOpen ? '0.3s' : '0s',
+                transitionDelay: (i + 2) * 0.1 + 's',
+                transitionTimingFunction: 'ease-out',
+                opacity: mobileNavOpen ? 1 : 0,
+                transform: mobileNavOpen ? 'translateX(0)' : 'translateX(3rem)'
+              }}
               className="text-[1.2rem] border-[3px] border-gray-600 dark:border-light hover:border-darkest dark:hover:border-secondary-light rounded-full p-[4px] text-gray-600 dark:text-light hover:text-darkest dark:hover:text-secondary-light transition-all duration-300 ease-in-out hover:-translate-y-1"
             >
               {icon}
@@ -125,7 +139,7 @@ const Navbar = (props: {}): JSX.Element => {
         </ul>
 
       </nav>
-    </header>
+    </header >
   );
 };
 
