@@ -65,6 +65,7 @@ const Navbar = (props: {}): JSX.Element => {
       <nav className={`nav ${!navBgActive && 'opacity-0 -translate-y-full'} container mx-auto flex items-center justify-between w-full py-5 px-3 lg:px-6 text-lg`}>
         <Link
           href={'/'}
+          onClick={() => setMobileNavOpen(false)}
           className={'text-dark dark:text-lightest uppercase text-3xl sm:text-4xl z-10 font-semibold dark:font-medium'}
         >
           {'{Ali}'}
@@ -97,7 +98,6 @@ const Navbar = (props: {}): JSX.Element => {
               <Link
                 href={`#${el}`}
                 className="text-dark dark:text-lightest block"
-                onClick={() => setMobileNavOpen(false)}
               >
                 {el[0].toUpperCase() + el.slice(1)}
               </Link>
