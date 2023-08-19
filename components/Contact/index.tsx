@@ -46,6 +46,7 @@ const Contact = (props: {}): JSX.Element => {
           <div className="pt-8 flex flex-wrap items-center gap-3">
             <Link
               href={'https://github.com/SydAliHsn'}
+              target='_blank'
               className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15]"
             >
               <BiLogoGithub />
@@ -53,6 +54,7 @@ const Contact = (props: {}): JSX.Element => {
 
             <Link
               href={'https://linkedin.com/in/SydAliHsn'}
+              target='_blank'
               className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15]"
             >
               <BiLogoLinkedin />
@@ -60,6 +62,7 @@ const Contact = (props: {}): JSX.Element => {
 
             <Link
               href={'https://twitter.com/SydAliHsn'}
+              target='_blank'
               className="text-3xl flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-full duration-300 p-2 font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15]"
             >
               <BiLogoTwitter />
@@ -67,6 +70,7 @@ const Contact = (props: {}): JSX.Element => {
 
             <Link
               href={'mailto:ali@syyed.me'}
+              target='_blank'
               className="text-lg flex items-center justify-center gap-2 border-2 border-light text-secondary-dark dark:text-secondary-light hover:text-primary-light dark:hover:text-secondary transtion-all rounded-full duration-300 p-2 sm:p-0 font-medium hover:bg-[#a7f5ff42] dark:hover:bg-[#a7f5ff15]"
             >
               <HiMail className="sm:hidden text-3xl" />

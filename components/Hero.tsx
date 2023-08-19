@@ -79,12 +79,14 @@ const Hero = (props: {}): JSX.Element => {
                 <div className='flex items-center absolute'>
                     {'About Me'.split('').map((letter, i) => {
                         if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
+
                         return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-top transition-transform ease-in-out duration-300 group-hover:scale-y-0">{letter}</span>
                     })}
                 </div>
                 <div className='flex items-center'>
                     {'About Me'.split('').map((letter, i) => {
                         if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
+                        
                         return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-bottom transition-transform ease-in-out duration-300 scale-y-0 group-hover:scale-y-100">{letter}</span>
                     })}
                 </div>
