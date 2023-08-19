@@ -51,8 +51,8 @@ const Hero = (props: {}): JSX.Element => {
     return <section className="mx-auto min-h-screen flex items-center section bg-angled">
         <div ref={container} className="container flex flex-col items-start justify-center flex-grow mx-auto px-4 sm:px-4 md:px-20 lg:px-[7.5rem]">
 
-            <h4 className="text-primary-light dark:text-secondary text-2xl font-medium">
-                <span className="greeting inline-block opacity-0">Hello! 👋</span>
+            <h4 className="text-xl sm:text-2xl font-medium text-primary-light dark:text-secondary">
+                <span className="greeting inline-block opacity-0">Hello!👋</span>
                 {' '}
                 <span className='init opacity-0 inline-block'>My name is</span>
             </h4>
@@ -86,7 +86,7 @@ const Hero = (props: {}): JSX.Element => {
                 <div className='flex items-center'>
                     {'About Me'.split('').map((letter, i) => {
                         if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
-                        
+
                         return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-bottom transition-transform ease-in-out duration-300 scale-y-0 group-hover:scale-y-100">{letter}</span>
                     })}
                 </div>
