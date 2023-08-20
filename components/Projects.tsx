@@ -47,7 +47,7 @@ const Projects = (props: {}): JSX.Element => {
         <p className='fadeUp text-xl sm:text-2xl md:text-3xl font-normal'>Things I&apos;ve made trying to put my dent in the universe.</p>
       </div>
 
-      <div className='sm:mt-10 mt-14 flex flex-col gap-20 sm:gap-24 lg:gap-28'>
+      <div className='mt-10 sm:mt-16 flex flex-col gap-16 sm:gap-24 lg:gap-28'>
 
         <ProjectCard
           technologies={['Next.JS', 'Vanilla CSS', 'Typescript', 'Storyblock CMS']}
