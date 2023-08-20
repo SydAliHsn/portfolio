@@ -29,7 +29,7 @@ const Projects = (props: {}): JSX.Element => {
           trigger: container.current,
           start: "top 65%",
         },
-        stagger: 0.3,
+        stagger: 0.2,
       })
     }, container);
 
