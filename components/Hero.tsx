@@ -11,7 +11,7 @@ const Hero = (props: {}): JSX.Element => {
 
     useEffect(() => {
         let ctx = gsap.context(() => {
-            // 4 seconds
+            // 4.1 seconds
             gsap.timeline().to(".greeting", {
                 opacity: 1,
                 duration: 0.5
@@ -36,11 +36,10 @@ const Hero = (props: {}): JSX.Element => {
                 .to(".intro", {
                     delay: 0.2,
                     opacity: 1,
-                    duration: 0
+                    duration: 0.1
                 })
                 .to(".about-button", {
                     scale: 1,
-                    duration: 0,
                 })
         }, container);
 
@@ -75,21 +74,9 @@ const Hero = (props: {}): JSX.Element => {
                 I like building and breaking things on the Internet!
             </p>
 
-            <Link href="#about" className="scale-0 about-button bg-primary-light dark:bg-secondary-light hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md group relative">
-                <div className=' absolute'>
-                    {'About Me'.split('').map((letter, i) => {
-                        if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
-
-                        return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-top transition-transform ease-in-out duration-300 group-hover:scale-y-0">{letter}</span>
-                    })}
-                </div>
-                <div className=''>
-                    {'About Me'.split('').map((letter, i) => {
-                        if (letter === ' ') return <span key={i} className="inline-block">&nbsp;</span>
-
-                        return <span key={i} style={{ transitionDelay: `${i * 75}ms` }} className="origin-bottom transition-transform ease-in-out duration-300 scale-y-0 group-hover:scale-y-100">{letter}</span>
-                    })}
-                </div>
+            <Link href="#about"
+                className="scale-0 about-button bg-primary-light dark:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md relative hover:rounded-4xl hover:bg-secondary-dark">
+                About Me
             </Link>
 
         </div >
