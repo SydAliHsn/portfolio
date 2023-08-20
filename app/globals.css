@@ -45,12 +45,12 @@ body {
   background: linear-gradient(to right bottom, theme('colors.primary') 50%, theme('colors.primary-light') 50.1%);
 }
 
-/* .shadow-project {
+.shadow-project {
   box-shadow: 0px 0px 30px 0px rgba(98, 210, 255, 0.7);
 }
 .dark .shadow-project {
   box-shadow: 0px 0px 30px 0px rgba(17, 97, 155, 0.5);
-} */
+}
 
 /* Hamburger Button */
 .hamb {
