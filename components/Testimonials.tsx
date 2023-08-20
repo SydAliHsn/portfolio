@@ -20,6 +20,7 @@ const Testimonials = (props: {}): JSX.Element => {
                 y: 50,
                 opacity: 0,
                 duration: 0.4,
+                ease: "power1.out",
                 scrollTrigger: {
                     trigger: container.current,
                     start: "top 65%",
