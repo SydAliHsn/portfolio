@@ -75,7 +75,7 @@ const Hero = (props: {}): JSX.Element => {
             </p>
 
             <Link href="#about"
-                className="scale-0 about-button bg-primary-light dark:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md relative hover:rounded-4xl hover:bg-secondary-dark">
+                className="scale-0 about-button bg-primary-light dark:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md relative hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary-dark">
                 About Me
             </Link>
 
