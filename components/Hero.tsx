@@ -11,7 +11,6 @@ const Hero = (props: {}): JSX.Element => {
 
     useEffect(() => {
         let ctx = gsap.context(() => {
-            // 4.1 seconds
             gsap.timeline().to(".greeting", {
                 opacity: 1,
                 duration: 0.5
@@ -34,11 +33,11 @@ const Hero = (props: {}): JSX.Element => {
                     delay: 0.3
                 })
                 .to(".intro", {
-                    delay: 0.2,
                     opacity: 1,
-                    duration: 0.1
+                    duration: 0.3
                 })
                 .to(".about-button", {
+                    delay: 0.2,
                     scale: 1,
                 })
         }, container);
