@@ -38,7 +38,9 @@ const Hero = (props: {}): JSX.Element => {
                 })
                 .to(".about-button", {
                     delay: 0.2,
-                    scale: 1,
+                    duration: 0.2,
+                    opacity: 1,
+                    translateX: 0,
                 })
         }, container);
 
@@ -74,7 +76,7 @@ const Hero = (props: {}): JSX.Element => {
             </p>
 
             <Link href="#about"
-                className="scale-0 about-button bg-primary-light dark:bg-secondary transition-all duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md relative hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary-dark">
+                className="-translate-x-28 opacity-0 about-button bg-primary-light dark:bg-secondary transition-[background-color, border-radius] duration-300 text-secondary-light dark:text-primary text-xl font-medium px-6 py-3 mt-7 rounded-md relative hover:rounded-4xl hover:bg-primary dark:hover:bg-secondary-dark">
                 About Me
             </Link>
 
