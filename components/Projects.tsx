@@ -43,7 +43,7 @@ const Projects = (props: {}): JSX.Element => {
     <div ref={container} className="container mx-auto px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl">
 
       <div className='text-center'>
-        <h1 className='fadeUp text-4xl md:text-5xl font-bold py-4'>Projects</h1>
+        <h1 className='fadeUp text-4xl md:text-5xl font-bold pb-4'>Projects</h1>
         <p className='fadeUp text-xl sm:text-2xl md:text-3xl font-normal'>Things I&apos;ve made trying to put my dent in the universe.</p>
       </div>
 
