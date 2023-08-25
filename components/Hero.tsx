@@ -52,7 +52,9 @@ const Hero = (props: {}): JSX.Element => {
         <div ref={container} className="container flex flex-col items-start justify-center flex-grow mx-auto px-4 sm:px-4 md:px-20 lg:px-[7.5rem]">
 
             <h4 className="text-xl sm:text-2xl font-medium text-primary-light dark:text-secondary">
-                <span className="greeting inline-block opacity-0">Hello!👋</span>
+                <span className="greeting inline-block opacity-0">
+                    Hello!<span className='text-2xl sm:text-3xl'>👋</span>
+                </span>
                 {' '}
                 <span className='init opacity-0 inline-block'>My name is</span>
             </h4>
