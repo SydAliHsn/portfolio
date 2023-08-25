@@ -13,6 +13,7 @@ const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '70
 export const metadata: Metadata = {
   title: 'Syed Ali Hassan | Fullstack Developer',
   description: 'My Portfolio site built with Next.js and TailwindCSS',
+  keywords: ['Web Developer', 'Fullstack Developer', 'Freelance Developer', 'Cyber Security',],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
