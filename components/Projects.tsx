@@ -44,10 +44,10 @@ const Projects = (props: {}): JSX.Element => {
 
       <div className='text-center'>
         <h1 className='fadeUp text-4xl md:text-5xl font-bold pb-4'>Projects</h1>
-        <p className='fadeUp text-xl sm:text-2xl md:text-3xl font-normal'>Things I&apos;ve made trying to put my dent in the universe.</p>
+        <p className='fadeUp text-xl sm:text-2xl md:text-3xl'>Things I&apos;ve made trying to put my dent in the universe.</p>
       </div>
 
-      <div className='mt-10 sm:mt-16 flex flex-col gap-16 sm:gap-24 md:gap-28'>
+      <div className='mt-10 sm:mt-16 md:mt-20 flex flex-col gap-16 sm:gap-24 md:gap-28'>
 
         <ProjectCard
           technologies={['Next.JS', 'Vanilla CSS', 'Typescript', 'Storyblock CMS']}
