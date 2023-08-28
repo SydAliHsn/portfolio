@@ -37,13 +37,13 @@ const ProjectCard = ({ technologies, badge, title, content, img, repoName, url, 
         className={`bg-lightest dark:bg-dark md:!bg-transparent relative p-4 sm:p-6 md:p-0 rounded-3xl flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 shadow-md shadow-light/10 dark:shadow-black/10 md:shadow-none`}>
 
         {/* Image Container */}
-        <Link href={url} target='_blank' className='fadeIn md:w-[65%] md:rounded-3xl rounded-2xl overflow-hidden relative shadow-project aspect-video'>
+        <Link href={url} target='_blank' className='fadeIn md:w-[65%] md:rounded-3xl rounded-2xl overflow-hidden relative shadow-project'>
             <Image src={img} alt={title} className='hover:scale-110 ease-in-out transition-transform duration-500' />
         </Link>
         {/* End of Image Container */}
 
         {/* Text/Content Container */}
-        <div className={`fadeIn rounded-3xl md:absolute ${reverse ? 'left-0' : 'right-0 md:text-right'} top-1/2 md:-translate-y-1/2 md:w-[28rem] xl:w-1/2`}>
+        <div className={`fadeIn rounded-3xl md:absolute ${reverse ? 'left-0' : 'right-0 md:text-right'} top-1/2 md:-translate-y-1/2 md:w-[28rem] lg:w-[30rem] xl:w-1/2`}>
 
             <h5 className='text-[0.95rem] font-medium text-primary-light dark:text-secondary'>{badge}</h5>
             <h3 className='text-2xl pb-3 lg:pb-5 font-semibold dark:text-lighter'>{title}</h3>
