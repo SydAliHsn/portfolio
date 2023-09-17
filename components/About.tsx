@@ -24,7 +24,7 @@ const About = (props: {}): JSX.Element => {
 
     let ctx = gsap.context(() => {
       gsap.from(".fadeIn", {
-        scale: 0.8,
+        scale: 0.7,
         opacity: 0,
         duration: 0.4,
         scrollTrigger: {
