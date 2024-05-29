@@ -110,7 +110,7 @@ const About = (props: {}): JSX.Element => {
       id="about"
     >
 
-      <Me />
+      {/* <Me /> */}
 
       <div className="container mx-auto flex flex-col md:flex-row gap-4 px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl md:max-h-[63rem] lg:max-h-[60rem] xl:max-h-[51rem]">
 
