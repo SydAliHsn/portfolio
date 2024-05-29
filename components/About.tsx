@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap/gsap-core';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -11,10 +12,71 @@ import Creative from './svg/Creative';
 import SelfTaught from './svg/SelfTaught';
 import SecondaryButton from './SecondaryButton';
 import PrimaryButton from './PrimaryButton';
+import CircularText from './CircularText';
 
 const skills = [
   'Javascript', 'Typescript', 'React', 'NextJS', 'NodeJS', 'Express', 'SASS', 'TailwindCSS', 'SQL', 'Git', 'Python', 'PHP', 'Linux', 'Java',
 ]
+
+const Me = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const container = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let ctx = gsap.context(() => {
+      gsap.from(".watty", {
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top 100px",
+          end: '+=700',
+          scrub: true,
+          pin: container.current,
+          toggleActions: 'play reverse play reverse',
+        },
+        rotate: 360,
+        ease: 'none',
+      })
+
+      gsap.from(".latty", {
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top 100px",
+          end: '+=700',
+          scrub: true,
+          // pin: container.current,
+          toggleActions: 'play reverse play reverse',
+        },
+        rotate: -160,
+        ease: 'none',
+      })
+
+    }, container);
+
+    return () => ctx.revert()
+  }, [])
+
+  return <div className='overflow-hidden max-sm:-mt-20 max-sm:-mb-4 max-xs:-mt-28 max-xs:-mb-16'>
+    <div ref={container}
+      className='flex flex-col justify-center relative h-[30rem] max-sm:scale-90 max-xs:scale-75'>
+
+      <div className='watty w-[18.5rem] h-[18.5rem] bg-angled rounded-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 box-content border-[2rem] border-primary-light dark:border-secondary overflow-hidden'>
+        <Image src="/me-port.png" alt="ME!" width={463} height={539} />
+      </div>
+
+      <div className='latty absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>
+        <CircularText
+          spacing={1.09}
+          fontSize='2rem'
+          text='Syed Ali Hassan • Syed Ali Hassan • Syed Ali Hassan • '
+          textClassNames='dark:text-primary-light text-secondary'
+        />
+      </div>
+
+    </div>
+  </div>
+}
 
 const About = (props: {}): JSX.Element => {
   const personalityContainer = useRef(null);
@@ -33,6 +95,7 @@ const About = (props: {}): JSX.Element => {
         },
         stagger: 0.4,
       })
+
     }, personalityContainer);
 
     return () => ctx.revert()
@@ -46,6 +109,9 @@ const About = (props: {}): JSX.Element => {
       className="section pt-24 text-darker dark:text-lightest"
       id="about"
     >
+
+      <Me />
+
       <div className="container mx-auto flex flex-col md:flex-row gap-4 px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl md:max-h-[63rem] lg:max-h-[60rem] xl:max-h-[51rem]">
 
         <div className="p-4 xs:p-5 md:p-6 lg:p-8 bg-lightest shadow-md shadow-light/10 dark:shadow-black/10 dark:bg-dark rounded-4xl flex flex-col gap-5 md:w-2/3">
