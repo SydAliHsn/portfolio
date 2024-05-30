@@ -95,7 +95,7 @@ const About = (props: {}): JSX.Element => {
           delay: i * 0.3,
           scrollTrigger: {
             trigger: el,
-            start: "top 55%",
+            start: "top 60%",
           },
         })
       })
