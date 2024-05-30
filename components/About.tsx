@@ -93,7 +93,6 @@ const About = (props: {}): JSX.Element => {
           opacity: 0,
           duration: 0.4,
           scrollTrigger: {
-            markers: true,
             trigger: el,
             start: "top 55%",
           },
