@@ -84,16 +84,20 @@ const About = (props: {}): JSX.Element => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    const q = gsap.utils.selector(personalityContainer);
+
     let ctx = gsap.context(() => {
-      gsap.from(".fadeIn", {
-        scale: 0.7,
-        opacity: 0,
-        duration: 0.4,
-        scrollTrigger: {
-          trigger: personalityContainer.current,
-          start: "top 75%",
-        },
-        stagger: 0.4,
+      q('.fadeIn').forEach((el: HTMLElement) => {
+        gsap.from(el, {
+          scale: 0.7,
+          opacity: 0,
+          duration: 0.4,
+          scrollTrigger: {
+            markers: true,
+            trigger: el,
+            start: "top 55%",
+          },
+        })
       })
 
     }, personalityContainer);
