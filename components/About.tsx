@@ -29,7 +29,7 @@ const Me = () => {
       gsap.from(".watty", {
         scrollTrigger: {
           trigger: container.current,
-          start: "top 100px",
+          start: "top 100vh",
           end: '+=700',
           scrub: true,
           pin: container.current,
@@ -42,7 +42,7 @@ const Me = () => {
       gsap.from(".latty", {
         scrollTrigger: {
           trigger: container.current,
-          start: "top 100px",
+          start: "top 100vh",
           end: '+=700',
           scrub: true,
           // pin: container.current,
@@ -67,8 +67,8 @@ const Me = () => {
 
       <div className='latty absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>
         <CircularText
-          spacing={1.09}
-          fontSize='2rem'
+          spacing={1.03}
+          fontSize='1.9rem'
           text='Syed Ali Hassan • Syed Ali Hassan • Syed Ali Hassan • '
           textClassNames='dark:text-primary-light text-secondary'
         />
@@ -110,7 +110,7 @@ const About = (props: {}): JSX.Element => {
       id="about"
     >
 
-      {/* <Me /> */}
+      <Me />
 
       <div className="container mx-auto flex flex-col md:flex-row gap-4 px-2 sm:px-4 md:px-16 lg:px-[7.5rem] xl:px-36 2xl:max-w-7xl md:max-h-[63rem] lg:max-h-[60rem] xl:max-h-[51rem]">
 

@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Poppins, Space_Mono } from 'next/font/google';
 
 import Provider from './provider';
 import Navbar from '@/components/Navbar';
@@ -9,6 +9,8 @@ import SideLinks from '@/components/SideLinks';
 import ThemeSwitch from '@/components/ThemeSwitch';
 
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800'], subsets: ['latin'] });
+
+const spaceMono = Space_Mono({ weight: ['400', '700'], subsets: ['latin'], variable: '--font-space-mono' });
 
 export const metadata: Metadata = {
   title: 'Syed Ali Hassan | Fullstack Developer',
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className}`}>
+      <body className={`${poppins.className} ${spaceMono.variable}`}>
         <Provider>
           <ThemeSwitch />
 

@@ -8,11 +8,11 @@ const CircularText = ({ fontSize, text, spacing, textClassNames }:
     const innerAngle = 360 / total;
     const radius = (spacing ?? 1) / Math.sin(innerAngle * Math.PI / 180); // hypotenuse
 
-    return <div className='relative w-2 h-2 rounded-2xl'>
+    return <div className='relative w-2 h-2 rounded-2xl mono'>
         {textArr.map((letter, index) =>
             <span
                 key={index}
-                className={`text-primary-light inline-block font-mono absolute font-bold ${textClassNames}`}
+                className={`text-primary-light inline-block absolute font-bold ${textClassNames}`}
                 style={{
                     fontSize,
                     transform: `translate(-50%, -50%)
