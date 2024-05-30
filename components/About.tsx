@@ -87,11 +87,12 @@ const About = (props: {}): JSX.Element => {
     const q = gsap.utils.selector(personalityContainer);
 
     let ctx = gsap.context(() => {
-      q('.fadeIn').forEach((el: HTMLElement) => {
+      q('.fadeIn').forEach((el: HTMLElement, i) => {
         gsap.from(el, {
           scale: 0.7,
           opacity: 0,
           duration: 0.4,
+          delay: i * 0.3,
           scrollTrigger: {
             trigger: el,
             start: "top 55%",
