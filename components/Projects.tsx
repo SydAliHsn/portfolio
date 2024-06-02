@@ -66,7 +66,7 @@ const Projects = (props: {}): JSX.Element => {
           badge='Practice Project'
           title='Devjobs Job Board'
           img={devjobs}
-          url='https://cute-cyan-brown-bear-cuff.cyclic.app/'
+          url='https://devjobs.syyed.me'
           content='A simple job listing board made with React and styled with SASS/SCSS. The website fetches data from an Express backend using MongoDB and displays it in a clean and minimalistic UI.'
         />
 
