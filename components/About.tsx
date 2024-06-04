@@ -153,7 +153,7 @@ const About = (props: {}): JSX.Element => {
               <HiOutlineChatBubbleOvalLeft className="font-medium text-2xl" />
             </PrimaryButton>
 
-            <SecondaryButton href='/resume' className='flex-grow xs:flex-grow-0'>
+            <SecondaryButton href='/syed-ali-resume.pdf' newPage className='flex-grow xs:flex-grow-0'>
               <FaRegAddressCard /> Resume
             </SecondaryButton>
           </div>
