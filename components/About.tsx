@@ -168,7 +168,7 @@ const About = (props: {}): JSX.Element => {
             </ul>
           </div>
 
-          <div className="flex flex-wrap justify-self-end justify-center xs:justify-start gap-2 xs:gap-4 mt-8">
+          <div className="flex flex-wrap mt-auto justify-center xs:justify-start gap-2 xs:gap-4">
             <PrimaryButton
               href="#contact"
               className="flex-grow xs:flex-grow-0"
