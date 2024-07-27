@@ -15,12 +15,11 @@ import PrimaryButton from './PrimaryButton';
 import CircularText from './CircularText';
 
 const skills = [
-  'Javascript',
-  'Typescript',
+  'JavaScript',
+  'TypeScript',
   'React',
   'NextJS',
   'NodeJS',
-  'Express',
   'SASS',
   'TailwindCSS',
   'SQL',
