@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ['filipivanovic.netlify.app'],
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
