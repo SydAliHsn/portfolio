@@ -24,7 +24,7 @@ const skills = [
   'SQL',
   'TailwindCSS',
   'MongoDB',
-  'Supabase',
+  'PostgreSQL',
   'Git',
   'Python',
   'PHP',
